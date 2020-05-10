@@ -12,7 +12,7 @@ Seoul National University
 
 - - -
 
-[credit: 김도훈(2019학번) 석사 조교]
+[credit: 김도훈(2019학번)]
 
 <h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#윈도우-환경" data-toc-modified-id="윈도우-환경-1">윈도우 환경</a></span><ul class="toc-item"><li><span><a href="#시스템에-설치되어-있는-폰트-확인하기" data-toc-modified-id="시스템에-설치되어-있는-폰트-확인하기-1.1">시스템에 설치되어 있는 폰트 확인하기</a></span></li><li><span><a href="#한글-폰트-설치하기" data-toc-modified-id="한글-폰트-설치하기-1.2">한글 폰트 설치하기</a></span></li></ul></li><li><span><a href="#맥(masOS)-환경" data-toc-modified-id="맥(masOS)-환경-2">맥(masOS) 환경</a></span><ul class="toc-item"><li><span><a href="#시스템에-설치되어-있는-폰트-확인하기" data-toc-modified-id="시스템에-설치되어-있는-폰트-확인하기-2.1">시스템에 설치되어 있는 폰트 확인하기</a></span></li><li><span><a href="#한글-폰트-설치하기" data-toc-modified-id="한글-폰트-설치하기-2.2">한글 폰트 설치하기</a></span></li></ul></li><li><span><a href="#Google-Colaboratory-환경" data-toc-modified-id="Google-Colaboratory-환경-3">Google Colaboratory 환경</a></span><ul class="toc-item"><li><span><a href="#한글-폰트-설치하기" data-toc-modified-id="한글-폰트-설치하기-3.1">한글 폰트 설치하기</a></span></li></ul></li><li><span><a href="#참고" data-toc-modified-id="참고-4">참고</a></span></li></ul></div>
