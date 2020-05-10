@@ -1,6 +1,6 @@
 # 판다스(Pandas)
 
-## [Series](0.series.md)
+## [Series](01.series.md)
 
 ## [DataFrame](02.dataframe.md)
 
