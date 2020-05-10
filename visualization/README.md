@@ -2,7 +2,7 @@
 
 ## [한글 폰트 설치](korean-fonts-setup.md)
 
-## [Matplitlib 기](matplotlib)
+## [Matplitlib 기초](matplotlib)
 
 
 ### More coming...
