@@ -12,6 +12,8 @@
 
 ## [Update](06.update.md)
 
+## [Combining](07.combining-dataframe.md)
+
 
 ### More coming...
 
