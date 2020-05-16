@@ -2,7 +2,7 @@
 
 ## [BeautifulSoup: A Crash Course](00.bs4-short-intro.md)
 
-## [Web Scraping: 기초](lab00.web-scraping-basic.md)
+## [Web Scraping: 기초](01.web-scraping-basic.md)
 
 
 ### More coming...
