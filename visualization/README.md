@@ -4,6 +4,8 @@
 
 ## [Matplitlib 기초](matplotlib.md)
 
+## [seaborn 기초](seaborn.md)
+
 
 ### More coming...
 
