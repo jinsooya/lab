@@ -4,7 +4,11 @@
 
 ## [Pandas](pandas)
 
+## [NumPy](numpy)
+
 ## [Visualization](visualization)
+
+## [Databases](db)
 
 
 ### More coming...
