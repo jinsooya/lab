@@ -4,6 +4,10 @@
 
 ## [Web Scraping: 기초](01.web-scraping-basic.md)
 
+## [Web Scraping and Visualization](02.web-scraping-visualization.md)
+
+
+
 
 ### More coming...
 
