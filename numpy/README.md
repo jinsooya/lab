@@ -2,7 +2,9 @@
 
 ## [Array](01.array.md)
 
+## [Indexing](02.indexing.md)
 
+## [Basic Operations](03.basic-operations.md)
 
 ### More coming...
 
