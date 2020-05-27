@@ -57,7 +57,7 @@ Seoul National University
 
 **인스턴스**(instance)란?
 - 특정 시점에 저장되어 있는 데이터베이스의 내용
-- 데이터베이스 상태(status)라고도 한다.
+- 데이터베이스 **상태(status)**라고도 한다.
 
 **트랜잭션**(transaction)이란?
 - 데이터베이스에서 일련의 작업을 수행하는 단위다.
