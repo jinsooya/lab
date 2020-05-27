@@ -20,8 +20,8 @@ Seoul National University
 # 데이터베이스 기본 개념
 
 데이터베이스와 SQL(Structured Query Language)은 범위를 벗어나는 주제이기 때문에 각자 공부를 해야한다. 여기서는 최소한의 개념만 설명하기로 한다. 특히 SQL과 Relational Algebra에 관한 상세한 내용은 아래 링크를 참조한다.
-- SQL: https://jinsooya.github.io/lab/db/sql-integrity-constraints.pdf
-- Relational Algebra: https://jinsooya.github.io/lab/db/relational-algebra.pdf
+- SQL: [https://jinsooya.github.io/lab/db/sql-integrity-constraints.pdf](https://jinsooya.github.io/lab/db/sql-integrity-constraints.pdf)
+- Relational Algebra: [https://jinsooya.github.io/lab/db/relational-algebra.pdf](https://jinsooya.github.io/lab/db/relational-algebra.pdf)
 
 ## 데이터베이스 관리 시스템
 
