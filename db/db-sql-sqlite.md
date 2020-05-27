@@ -61,7 +61,7 @@ Seoul National University
 
 **트랜잭션**(transaction)이란?
 - 데이터베이스에서 일련의 작업을 수행하는 단위다.
-  * 성공(commit) 혹은 실패(Abort)로 종료한다.
+  * 성공(commit) 혹은 실패(abort)로 종료한다.
   * ACID 특성을 가진다.
 
 **ACID**란?
