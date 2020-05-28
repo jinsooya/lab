@@ -155,11 +155,11 @@ EMPLOYEE 테이블
 ### 제약 조건
 
 **제약 조건**(constraint)이란?
-- 데이터베이스의 무결성(정확성, 일관성, 유효성)의 유지하기 위해 테이블에 정용하는 규칙이다.
+- 데이터베이스의 무결성(정확성, 일관성, 유효성)의 유지하기 위해 테이블에 적용하는 규칙이다.
 
 **제약 조건**
 - UNIQUE KEY: 저장한 레코드를 고유하게 식별하기 위한 키를 정의한다. 
-    - 예) 주민등록번호, 학번, 사번)
+    - 예) 주민등록번호, 학번, 사번
     - NULL 값은 중복 입력이 가능하다.
 - NOT NULL: 해당 컬럼에 NULL 값의 입력을 금지한다.
 - PRIMARY KEY: UNIQUE KEY & NOT NULL로 테이블 당 하나의 PRIMARY KEY만 정의할 수 있다.
@@ -172,15 +172,15 @@ EMPLOYEE 테이블
 
 **데이터 정의 언어**(data definition language, DDL)
 - 데이터베이스 스키마((테이블, 뷰, 인덱스 등)를 정의하는 언어다.
-- DDL 컴파일러는 메타 데이터를 포함하는 데이터 사전에 저장될 테이블들을 생성한다.
+- DDL 컴파일러는 메타 데이터를 포함하는 데이터 사전에 저장할 테이블들을 생성한다.
 - CREATE(테이블 생성), DROP(테이블 삭제), ALTER(테이블 수정/재정의)
 
 **데이터 조작 언어**(data manipulation language, DML)
 - 데이터베이스를 조작하는 언어로 데이터 검색, 삽입, 삭제 및 수정을 할 수 있다.
-- INSERT(레코드 입력), DELETE(레코드 삭제), UPDATE(레코드 갱신)
+- INSERT(데이터 입력), DELETE(데이터 삭제), UPDATE(데이터 갱신)
 
 **권한 제어 언어**(data control language, DCL)
-- 데이터베이스 사용자의 권한을 제어하는 언어다
+- 데이터베이스 사용자의 권한을 제어하는 언어다.
 - GRANT(권한 부여), REVOKE(권한 취소)
     
 
@@ -194,23 +194,23 @@ EMPLOYEE 테이블
 **SQLite**란?
 - 오픈 소스 데이터베이스 관리 시스템(DBMS) 중 하나로, 독립적인 서버 프로세스를 가지고 있지 않으며(서버-클라이언트 모델이 아닌 serverless) 응용 프로그램에 내장해서 사용할 수 있는 비교적 가벼운 데이터베이스(lightweight disk-based database)다. 따라서 로컬에서만 사용 가능하다.
 - 안드로이드나 아이폰 등 모바일 폰을 포함하여 많은 응용프로그램에 내장되어 사용되는 데이터베이스다.
-- SQLite에 상세한 내용은 아래 링트를 참조한다.
-    - SQLite Homepage: https://sqlite.org/index.html
-    - SQLite Tutorial: https://www.sqlitetutorial.net
+- SQLite에 상세한 내용은 다음 링크를 참조한다.
+    + SQLite Homepage: https://sqlite.org/index.html
+    + SQLite Tutorial: https://www.sqlitetutorial.net
 
 ## SQLite의 특징
 
 SQLite의 특징은 다음과 같다.
 
-- 단일 데이터베이스 파일 : 데이터베이스 간련 모든 정보가 단 하나의 파일로 저장한다. 즉, 테이블 스키마, 레코드 데이터, 인덱스과 같은 정보가 한 파일에 저장되며, SQLite API로 데이터베이스를 열 때도 해당 파일의 이름을 전달인자로 받는다.
+- 단일 데이터베이스 파일 : 데이터베이스 관련 모든 정보를 단 하나의 파일로 저장한다. 즉, 테이블 스키마, 레코드 데이터, 인덱스와 같은 정보가 한 파일에 저장되며, SQLite API로 데이터베이스를 열 때도 해당 파일의 이름을 전달인자로 받는다.
 - 간결성 : 페이지 크기에 제한이 있다. 데이터베이스 파일이 파일시스템에 파일로 저장되기 때문에 파일 크기 제한이 있다면 데이터베이스가 작동하는데 문제가 생길 수 있다. 따라서 큰 데이터를 저장하지 않는 편이 좋고 어쩔 수 없는 경우에는 데이터를 여러 데이터베이스 파일로 나눠서 저장하는 것이 좋다.
-    * 대략 140TB로 알려져 있으나 상세한 내용은 아래 링크를 참조하면 된다.
-        + https://www.sqlite.org/limits.html
-- 동시성 : 읽기는 여러 프로세스에서 가능하지만, 쓰기는 한 순간에 오직 하나의 프로세스만 가능합니다.
+    + 대략 140TB로 알려져 있으나 상세한 내용은 아래 링크를 참조하면 된다.
+        - https://www.sqlite.org/limits.html
+- 동시성 : 읽기는 여러 프로세스에서 가능하지만, 쓰기는 한 순간에 오직 하나의 프로세스만 가능하다.
 - DROP COLUMN, ALTER COLUMN, ADD CONSTRAINT 같은 구문은 지원하지 않는다. 동적 자료형과 RENAME TABLE을 활용하여 기능을 동일하게 구현할 수 있다.
-    - **동적 자료형**이란 자료형이 그것을 저장하는 저장소가 아닌 값 자체에 의해 결정되는 자료형을 뜻한다. 즉, 테이블을 생성할 때 선언한 컬럼의 자료형과 일치하지 않는 데이터도 저장할 수 있다.
+    + **동적 자료형**이란 자료형이 그것을 저장하는 저장소가 아닌, 값 자체에 의해 결정되는 자료형을 뜻한다. 즉, 테이블을 생성할 때 선언한 컬럼의 자료형과 일치하지 않는 데이터도 저장할 수 있다.
 - 더 상세한 정보는 아래 링크를 참조하면 된다.
-    - https://www.sqlite.org/lang.html
+    + https://www.sqlite.org/lang.html
     
 
 **SQLite 자료형**
@@ -227,7 +227,7 @@ SQLite3이 지원하는 자료형은 다음과 같다.
   
 
 **SQLite 주석**
-- 두 개 연속 대쉬 '**--**'이며 이 후의 모든 내용은 주석 처리된다.
+- 두 개 연속 대쉬 '**--**'이며 이후의 모든 내용은 주석 처리된다.
 - C 스타일 주석인 **/*     */** 로 이 안의 모든 내용은 주석 처리된다.
 
 ## 내려받기
@@ -237,7 +237,7 @@ SQLite3이 지원하는 자료형은 다음과 같다.
 
 ### 윈도우 운영체제
 
-**Precompiled Binaries for Windows**로 가서 아래 두 파일을 내려받는다.
+**Precompiled Binaries for Windows**로 가서 다음 두 파일을 내려받는다.
 - sqlite-**dll-win32**-x86-xxxxxxx.zip (32-bit DLL (x86) for SQLite version x.xx.x.)
 - sqlite-**tools-win32**-x86-xxxxxxx.zip (A bundle of command-line tools for managing SQLite database files, including the command-line shell program, the sqldiff.exe program, and the sqlite3_analyzer.exe program.)
 
@@ -256,7 +256,7 @@ Use ".open FILENAME" to reopen on a persistent database
 sqlite> _</pre>
 4. 종료하기 위해 **> .quit**을 입력하고 실행한다.
 
-여기서는 SQLite를 사용하여 SQL을 학습한다. 명령어 셀에서 SQLite를 사용할 예정이다.
+여기서는 SQLite를 사용하여 SQL을 학습한다. 명령어 셸에서 SQLite를 사용할 예정이다.
 
 **[참고]**  
 데이터베이스 연결과 SQL 실행을 위한 다양한 IDE가 존재한다. 원하면 내려받아 설치해서 사용하면 된다.
@@ -269,9 +269,9 @@ sqlite> _</pre>
 - 표준화 되어 모든 데이터베이스 시스템이 동일한 문법의 SQL 사용할 수 있다.
 
 주요 구문
-- 테이블 생성, 삭제, 변경 (CREATE, DROP, ALTER)
-- 데이터 갱신 (INSERT, UPDATE, DELETE)
-- 질의 (SELECT)
+- 테이블 생성, 삭제, 변경 : **CREATE**, **DROP**, **ALTER**
+- 데이터 갱신 : **INSERT**, **UPDATE**, **DELETE**
+- 질의 : **SELECT**
 - SQL 명령문들은 마지막에 '**;**' 부호를 사용하여 구분한다.
 
 **[참고]** SQL 실습도구
@@ -282,7 +282,9 @@ sqlite> _</pre>
 
 1. SQLite가 있는 폴더로 이동한다.
 1. 하위 폴더로 데이터베이스 파일을 저장할 'databases'라는 폴더를 생성한다.
-1. 명령어 셸 창을 연다(윈도우에서는 '명령 프롬프트', 맥에서는 '터미널')
+1. 명령어 셸 창을 연다.
+  - 윈도우: '명령 프롬프트'
+  - 맥OS: '터미널'
 1. 방금 만든 'databases' 폴더로 이동한다. 예를 들어,
     - 윈도우: **cd C:\sqlite-tools\databases**
     - 맥OS: **cd ~/sqlite-tools\databases**       
@@ -293,14 +295,13 @@ sqlite> _</pre>
 1. **sqlite>** 에서 다음과 같이 **.open**명령어를 실행하여 'company.db'를 생성한다.
     - <pre>sqlite> .open company.db</pre>
     - **.open** 명령어는 폴더에 데이터베이스가 있다면 해당 DB를 열어주고, 없다면 새로 생성한다.
+    - **[참고]** 명령어 셸에서 **sqlite3 [데이터베이스 이름].db**를 실행해도 데이터베이스를 만들 수 있다.
+        + 예) **> sqlite3 company.db**
 1. **sqlite>** 에서 **.databases**명령어를 실행하여 'company.db'가 만들어졌는지 확인한다. DB가 생성되어 연결되어 있다면 다음 예처럼 파일 경로와 함께 DB 이름을 보여준다.
     - <pre>sqlite> .databases</pre>
       <pre>main: /Users/jinsoopark/db/sqlite-tools/databases/company.db</pre>
-- 참고로 **sqlite>** 에서 **.help** 명령어르르 실행하면 SQLite가 제공하는 명령어들에 대한 정보를 볼 수 있다.
 
-
-**[참고]** : 명령어 셸에서 **sqlite3 [데이터베이스 이름].db**를 실행해도 데이터베이스를 만들 수 있다.
-- 예) **> sqlite3 company.db**
+참고로 **sqlite>** 에서 **.help** 명령어르르 실행하면 SQLite가 제공하는 명령어들에 대한 정보를 볼 수 있다.
 
 ## CREATE TABLE
 
@@ -673,7 +674,7 @@ eid         fname       lname       did         gender      salary
 
 ### 문제 1
 
-**CREATE**문을 사용하여 아래 테이블 'Employee'를 생성한다.
+**CREATE**문을 사용하여 다음과 같은 테이블 'Employee'를 생성한다.
 - eid: INTEGER
 - fname: TEXT
 - lname: TEXT
@@ -693,7 +694,7 @@ sqlite> -- Your answer here
 
 ### 문제 2
 
-**INSERT**문을 사용하여 아래 표에 나타난 8개의 레코드를 입력한다.
+**INSERT**문을 사용하여 다음 표에 나타난 **8**개의 레코드를 입력한다.
 
 |eid|fname|lname|did|gender|salary|
 |-|-----|-----|-----|-----|-----|
@@ -717,7 +718,7 @@ sqlite> -- Your answer here
 ### 문제 3
 
 다음을 질의하는 SQL을 작성하여 실행한다.
-- 연봉이 30,000불 이상인 직원들의 fname, lname, salary를 열람한다.
+- 연봉이 **30,000**불 이상인 직원들의 fname, lname, salary를 열람한다.
 
 | fname | lname | salary |
 |-----|-----|-----|
