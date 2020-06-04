@@ -156,7 +156,7 @@ conn.__TODO__
 
 
 ```python
-# --- Department 테이블을 생성하다.
+# --- Employee 테이블을 생성하다.
 # 데이터베이스에 연결한다.
 conn = sqlite3.connect(__TODO__)
 
