@@ -256,95 +256,46 @@ pyplot.show()
 
 ## 한글 폰트 설치하기
 
-구글 콜랩에서는 기본적으로 한글 폰트가 설치되어 있지 않기 때문에 사용자가 폰트를 설치해서 사용해아 한다. 구글 콜랩에서 설치할 수 있는 폰트의 리스트를 **!apt-cache search font**로 출력하고 **!apt-get install fonts-폰트이름* -qq**으로 설치를 할 수 있다.
-
-
-```python
-# 폰트를 설치하기 위해 구글 콜랩에서 설치할 수 있는 폰트의 리스트를 출력한다.
-!apt-cache search font
-```
-
+구글 콜랩에서는 기본적으로 한글 폰트가 설치되어 있지 않기 때문에 사용자가 폰트를 설치해서 사용해아 한다. 
 
 ```python
-!apt-get install fonts-nanum* -qq
-```
-
-설치된 나눔 폰트의 전체 경로를 확인한다.
-
-
-```python
-# 전체 폰트의 경로를 확인한다.
-sys_fonts = font_manager.findSystemFonts() 
-
-# 전체 폰트 중 'Nanum'이 포함된 폰트의 경로를 확인한다
-nanum_font = [font for font in sys_fonts if 'Nanum' in font] 
-nanum_font
-```
-
-    ['/usr/share/fonts/truetype/nanum/NanumSquareRoundL.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicExtraBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareRoundR.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjoExtraBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicCoding-Bold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumPen.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjoBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareRoundB.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicLight.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothic.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicEcoExtraBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjoEco.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicCoding.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareL.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjoEcoExtraBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicEco.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjo.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareB.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareR.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumGothicEcoBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBrush.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunGothicLight.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumMyeongjoEcoBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunGothicUltraLight.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunGothicBold.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumSquareEB.ttf',
-     '/usr/share/fonts/truetype/nanum/NanumBarunpenR.ttf']
-
-
-
-사용하고자 하는 폰트를 폰트의 경로를 포함한 폰트명으로 변수를 생성하고 **font_manager.FontProperties**를 이용하여 등록한다.
-
-
-```python
+import matplotlib 
+from matplotlib import font_manager, pyplot
+ 
+ # 폰트를 설치하기 위해 구글 콜랩에서 설치할 수 있는 폰트의 리스트를 출력한다.
+!apt -qq -y install fonts-nanum
+ 
 # 나눔바른고딕(NanumBarunGothic)을 사용하기 위해 경로를 포함시킨다.
 fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf' 
+
+# font_manager.FontProperties를 이용하여 등록한다.
 font = font_manager.FontProperties(fname=fontpath, size=9)
-```
-
-
-```python
-# matplotlib의 폰트 캐시 파일을 업데이트 한다.
-font_manager._rebuild() 
 
 # 나눔바른고딕으로 폰트를 설정한다.
 pyplot.rc('font', family='NanumBarunGothic') 
+
+# matplotlib의 폰트 캐시 파일을 업데이트 한다.
+font_manager._rebuild() 
 ```
 
 이제 폰트를 변경하기에 앞서 **런타임 다시 시작**을 하고 아래 셀을 실행한다.
 
-```python
-from matplotlib import font_manager, rc
-from matplotlib import pyplot # as plt
-import platform
+- **런타임** -> **런타임 다시 시작**
 
-# matplotlib의 폰트 캐시 파일을 업데이트 한다.
-font_manager._rebuild() 
+```python
+import matplotlib 
+from matplotlib import font_manager, pyplot
 
 # 나눔바른고딕으로 폰트를 설정한다.
 pyplot.rc('font', family='NanumBarunGothic') 
+
+# matplotlib의 폰트 캐시 파일을 업데이트 한다.
+font_manager._rebuild() 
+```
+
+```python
+# Retina 스크린을 장착한 컴퓨터인 경우 아래 매직 명령어를 사용해 고화질 도표를 생성할 수 있다.
+%config InlineBackend.figure_format = 'retina'
 ```
 
 ```python
