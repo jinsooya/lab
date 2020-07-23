@@ -262,7 +262,7 @@ pyplot.show()
 import matplotlib 
 from matplotlib import font_manager, pyplot
  
- # 폰트를 설치하기 위해 구글 콜랩에서 설치할 수 있는 폰트의 리스트를 출력한다.
+# 한글 폰트를 설치한다.
 !apt -qq -y install fonts-nanum
  
 # 나눔바른고딕(NanumBarunGothic)을 사용하기 위해 경로를 포함시킨다.
