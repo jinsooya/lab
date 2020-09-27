@@ -1864,15 +1864,14 @@ print('연결 외향 중심성 :', __TODO__)
 
 - 노드 **i**의 절대적 매개 중심성은 두 노드 **j**와 **k**간의 최단경로 가운데 노드 **i**를 포함하고 있는 경로의 개수(분자)에서 두 노드 **j**와 **k**간의 최단경로(노드 **i**를 포함 한 것과 안 한 것 모두 포함)의 총 개수(분모)를 나눈 값을 비율로 나타낼 수 있으며, 이 비율을 모두 더한 값이 된다.
 - **노드 i의 절대적 매개 중심성**
-  + ![abc](img/_abc.png) {width=300 height=70}
-  + 위 수식에서 <img src='img/_abc-1.png' alt='abc-1' width='25' height='25' align='center'>는 노드 **i**의 절대적 매개 중심성, *N*은 *n*개의 노드 집합, <img src='img/_abc-2.png' alt='abc-2' width='25' height='25' align='center'>는 노드 **j**와 **k** 사이에 존재하는 최단경로의 수, <img src='img/_abc-3.png' alt='abc-3' width='25' height='25' align='center'>는 노드 **j**와 **k** 사이에 존재하는 최단경로 중 노드 **i**를 포함하는 경로의 수를 의미한다.
+  + ![abc](img/_abc.png)
+  + 위 수식에서 ![abc](img/_abc-1.png)는 노드 **i**의 절대적 매개 중심성, *N*은 *n*개의 노드 집합, ![abc](img/_abc-2.png)는 노드 **j**와 **k** 사이에 존재하는 최단경로의 수, ![abc](img/_abc-3.png)는 노드 **j**와 **k** 사이에 존재하는 최단경로 중 노드 **i**를 포함하는 경로의 수를 의미한다.
 
 
 **상대적 매개 중심성**
 - 절대적 매개 중심성 값을 네트워크의 크기를 고려하여 정규화한 값이다.
 - **노드 i의 상대적 매개 중심성**
-  + <img src='img/_rbc.png' alt='rbc' width='500' height='120' align='center'>
-
+  + ![rbc](img/_rbc.png)
 
 NetworkX에서는 다음의 함수로 매개 중심성을 계산할 수 있다.
 - networkx.**betweenness_centrality**(G): 각 노드의 매개 중심성을 계산한다.
@@ -1924,13 +1923,13 @@ print('매개 중심성:', networkx.betweenness_centrality(g))
 **절대적 근접 중심성**  
 - 노드 **i**에서 **i**를 제외한 다른 노드들까지의 최단경로의 길이(단위: 한 노드)를 모두 더한 값을 역수로 취해서 구한다.
 - **노드 i의 절대적 근접 중심성**
-  + <img src='img/_acc.png' alt='acc' width='400' height='80' align='center'>
-  + 위의 수식에서 <img src='img/_acc-1.png' alt='acc-1' width='25' height='25' align='center'>는 노드 **i**의 절대적 근접 중심성, *n*은 네트워크 내 총 노드 개수, <img src='img/_acc-2.png' alt='acc-2' width='25' height='25' align='center'>는 노드 **i**부터 **i**를 제외한 다른 노드 **j**까지의 최단경로의 길이를 의미한다.
+  + ![acc](img/_acc.png)
+  + 위의 수식에서 ![acc-1](img/_acc-1.png)는 노드 **i**의 절대적 근접 중심성, *n*은 네트워크 내 총 노드 개수, ![acc-2](img/_acc-2.png)는 노드 **i**부터 **i**를 제외한 다른 노드 **j**까지의 최단경로의 길이를 의미한다.
 
 **상대적 근접 중심성**
 - 절대적 근접 중심성 값을 정규화한 값이다.
 - **노드 i의 상대적 근접 중심성**
-  + <img src='img/_rcc.png' alt='rcc' width='550' height='50' align='center'>
+  + ![rcc](img/_rcc.png)
 
 NetworkX에서는 다음의 함수로 상대적 근접 중심성을 계산할 수 있다.
 - networkx.**closenss_centrality**(G): 각 노드의 상대적 근접 중심성을 계산한다.
@@ -1970,12 +1969,12 @@ print('근접 중심성 :', __TODO__)
 **고유벡터 중심성(eigenvector centrality)** 이란?
 - 한 노드가 네트워크 내에서 중요한 노드들과 얼마나 연결되어 있는지를 나타내며 **아이겐벡터 중심성** 또는 **연쇄 중심성**이라고도 부른다.
 
-노드 ***i*** 의 **고유벡터 중심성** <img src='img/_ec-1.png' alt='ec-1' width='60' heigt='55' align='center'>는 단위 고유벡터 **e** 의 ***i*** 번째 요소다.
+노드 ***i*** 의 **고유벡터 중심성** ![ec-1](img/_ec-1.png)는 단위 고유벡터 **e** 의 ***i*** 번째 요소다.
 - 행렬 **A** 를 선형 변환(linear transformation)으로 봤을 때, 선형 변환 **A** 에 의한 변환 결과가 자기 자신의 상수배가 되는 **0** 이 아닌 벡터를 **고유벡터(eigenvector)** 라 하고 이 상수배 값을 **고유값(eigenvalue)** 이라 한다.
-- **e** 는 <img src='img/_ec-2.png' alt='ec-2' width='25' heigt='25' align='center'>를 요소로 갖는 **인접 행렬(adjacency matrix)** 의 가장 큰 고유값에 해당하는 고유벡터를 의미한다. 인접 행렬은 네트워크의 연결 관계를 이차원 배열로 나타내는 방식을 의미한다.
-- **e**는 방정식 <img src='img/_ec-3.png' alt='ec-3' width='60' heigt='60' align='center'>를 풀어서 구한다.
-  + 여기서 *e* 는 단위 벡터이기 때문에 *e*의 각 요소의 값은 벡터 내 각 요소의 제곱의 합이 **1** 이 되도록 정해진다. *X* 는 <img src='img/_ec-2.png' alt='ec-2' width='25' height='25' align='center'>를 요소로 갖는 인접 행렬이다. <img src='img/_ec-4.png' alt='ec-4' width='20' height='20' align='center'>는 여러가지 고유값(eigenvalue) 중 가장 큰 값을 선택하며, *e* 는 그 고유값에 해당하는 고유벡터가 된다. (선형대수 이론에 의해 하나의 정방 행렬에 여러 개의 고유값과 고유벡터가 존재할 수 있다.)
-  + 예를 들어, *n* 개의 노드가 있는 네트워크 인접 행렬의 가장 큰 고유값에 해당하는 고유벡터를 <img src='img/_ec-5.png' alt='ec-5' width='105' height='30' align='center'>이라 하면, ***i*** 번째 노드의 고유값은 <img src='img/_ec-6.png' alt='ec-6' width='20' height='20' align='center'>가 된다. 
+- **e** 는 ![ec-2](img/_ec-2.png)를 요소로 갖는 **인접 행렬(adjacency matrix)** 의 가장 큰 고유값에 해당하는 고유벡터를 의미한다. 인접 행렬은 네트워크의 연결 관계를 이차원 배열로 나타내는 방식을 의미한다.
+- **e**는 방정식 ![ec-3](img/_ec-3.png)를 풀어서 구한다.
+  + 여기서 *e* 는 단위 벡터이기 때문에 *e*의 각 요소의 값은 벡터 내 각 요소의 제곱의 합이 **1** 이 되도록 정해진다. *X* 는 ![ec-2](img/_ec-2.png)를 요소로 갖는 인접 행렬이다. ![ec-4](img/_ec-4.png)는 여러가지 고유값(eigenvalue) 중 가장 큰 값을 선택하며, *e* 는 그 고유값에 해당하는 고유벡터가 된다. (선형대수 이론에 의해 하나의 정방 행렬에 여러 개의 고유값과 고유벡터가 존재할 수 있다.)
+  + 예를 들어, *n* 개의 노드가 있는 네트워크 인접 행렬의 가장 큰 고유값에 해당하는 고유벡터를 ![ec-5](img/_ec-5.png)이라 하면, ***i*** 번째 노드의 고유값은 ![ec-6](img/_ec-6.png)가 된다. 
 
 NetworkX에서는 다음의 함수로 고유벡터 중심성을 계산할 수 있다.
 - networkx.**eigenvector_centrality**(G): 각 노드의 고유벡터 중심성을 계산한다.
