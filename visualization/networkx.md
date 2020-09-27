@@ -1864,7 +1864,7 @@ print('연결 외향 중심성 :', __TODO__)
 
 - 노드 **i**의 절대적 매개 중심성은 두 노드 **j**와 **k**간의 최단경로 가운데 노드 **i**를 포함하고 있는 경로의 개수(분자)에서 두 노드 **j**와 **k**간의 최단경로(노드 **i**를 포함 한 것과 안 한 것 모두 포함)의 총 개수(분모)를 나눈 값을 비율로 나타낼 수 있으며, 이 비율을 모두 더한 값이 된다.
 - **노드 i의 절대적 매개 중심성**
-  + <img src='https://github.com/jinsooya/lab/blob/master/visualization/img/_abc.png' alt='abc' width='300' height='70' align='center'>
+  + <img src='img/_abc.png' alt='abc' width='300' height='70' align='center'>
   + 위 수식에서 <img src='img/_abc-1.png' alt='abc-1' width='25' height='25' align='center'>는 노드 **i**의 절대적 매개 중심성, *N*은 *n*개의 노드 집합, <img src='img/_abc-2.png' alt='abc-2' width='25' height='25' align='center'>는 노드 **j**와 **k** 사이에 존재하는 최단경로의 수, <img src='img/_abc-3.png' alt='abc-3' width='25' height='25' align='center'>는 노드 **j**와 **k** 사이에 존재하는 최단경로 중 노드 **i**를 포함하는 경로의 수를 의미한다.
 
 
