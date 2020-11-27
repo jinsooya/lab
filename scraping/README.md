@@ -2,9 +2,11 @@
 
 ## [BeautifulSoup: A Crash Course](00.bs4-short-intro.md)
 
-## [Web Scraping: 기초](01.web-scraping-basic.md)
+## [Selenium: A Short Introduction](01.selenium.md)
 
-## [Web Scraping and Visualization](02.web-scraping-visualization.md)
+## [Web Scraping: 기초](10.web-scraping-basic.md)
+
+## [Web Scraping and Visualization](11.web-scraping-visualization.md)
 
 
 ### More coming...
