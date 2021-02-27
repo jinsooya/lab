@@ -5,7 +5,7 @@
 ## [sqlite3](sqlite3.md)
 
 ## [SQL](sql-integrity-constraints.pdf)
-
+ 
 ## [Relational Algebra](relational-algebra.pdf)
 
 
