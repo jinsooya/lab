@@ -8,7 +8,7 @@
 
 ## [Relational Algebra](relational-algebra.pdf)
 
-
+ 
 
 ### More coming...
 
