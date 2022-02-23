@@ -1,7 +1,7 @@
 - - -
 
 # 쥬피터 노트북/쥬피터랩
-###Jupytyer Notebook/JupyterLab
+### Jupytyer Notebook/JupyterLab
 
 * * *
 
@@ -12,7 +12,9 @@ Seoul National University
 - - -
 
 <h3>Table of Contents<span class="tocSkip"></span></h3>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Managing-Jupyter-Notebook-Cell" data-toc-modified-id="Managing-Jupyter-Notebook-Cell-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Managing Jupyter Notebook Cell</a></span></li><li><span><a href="#Some-Useful-IPython-Magic-Commands" data-toc-modified-id="Some-Useful-IPython-Magic-Commands-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Some Useful IPython Magic Commands</a></span><ul class="toc-item"><li><span><a href="#Assistants" data-toc-modified-id="Assistants-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Assistants</a></span><ul class="toc-item"><li><span><a href="#%ismagic" data-toc-modified-id="%ismagic-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>%ismagic</a></span></li><li><span><a href="#?" data-toc-modified-id="?-2.1.2"><span class="toc-item-num">2.1.2&nbsp;&nbsp;</span>?</a></span></li><li><span><a href="#??" data-toc-modified-id="??-2.1.3"><span class="toc-item-num">2.1.3&nbsp;&nbsp;</span>??</a></span></li><li><span><a href="#%env-:-환경-변수-설정" data-toc-modified-id="%env-:-환경-변수-설정-2.1.4"><span class="toc-item-num">2.1.4&nbsp;&nbsp;</span>%env : 환경 변수 설정</a></span></li><li><span><a href="#%who-:-전역-변수-보기" data-toc-modified-id="%who-:-전역-변수-보기-2.1.5"><span class="toc-item-num">2.1.5&nbsp;&nbsp;</span>%who : 전역 변수 보기</a></span></li><li><span><a href="#%who_ls-:-전역-변수-리스트로-보기" data-toc-modified-id="%who_ls-:-전역-변수-리스트로-보기-2.1.6"><span class="toc-item-num">2.1.6&nbsp;&nbsp;</span>%who_ls : 전역 변수 리스트로 보기</a></span></li><li><span><a href="#%whos-:-전역-변수-상세-정보-보기" data-toc-modified-id="%whos-:-전역-변수-상세-정보-보기-2.1.7"><span class="toc-item-num">2.1.7&nbsp;&nbsp;</span>%whos : 전역 변수 상세 정보 보기</a></span></li><li><span><a href="#고화질-Retina" data-toc-modified-id="고화질-Retina-2.1.8"><span class="toc-item-num">2.1.8&nbsp;&nbsp;</span>고화질 Retina</a></span></li></ul></li><li><span><a href="#Writing,-Excuting,-Loading-Files" data-toc-modified-id="Writing,-Excuting,-Loading-Files-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Writing, Excuting, Loading Files</a></span><ul class="toc-item"><li><span><a href="#%%writefile-:-셀의-내용을-파일로-저장" data-toc-modified-id="%%writefile-:-셀의-내용을-파일로-저장-2.2.1"><span class="toc-item-num">2.2.1&nbsp;&nbsp;</span>%%writefile : 셀의 내용을 파일로 저장</a></span></li><li><span><a href="#%run-:-파이썬-코드-실행" data-toc-modified-id="%run-:-파이썬-코드-실행-2.2.2"><span class="toc-item-num">2.2.2&nbsp;&nbsp;</span>%run : 파이썬 코드 실행</a></span></li><li><span><a href="#!-:-셸-명령어-실행" data-toc-modified-id="!-:-셸-명령어-실행-2.2.3"><span class="toc-item-num">2.2.3&nbsp;&nbsp;</span>! : 셸 명령어 실행</a></span></li><li><span><a href="#%load-:-외부-코드-삽입" data-toc-modified-id="%load-:-외부-코드-삽입-2.2.4"><span class="toc-item-num">2.2.4&nbsp;&nbsp;</span>%load : 외부 코드 삽입</a></span></li><li><span><a href="#%pycat-:-외부-코드-보기" data-toc-modified-id="%pycat-:-외부-코드-보기-2.2.5"><span class="toc-item-num">2.2.5&nbsp;&nbsp;</span>%pycat : 외부 코드 보기</a></span></li><li><span><a href="#%store-:-Jupyter-Notebook-간에-변수-주고-받기" data-toc-modified-id="%store-:-Jupyter-Notebook-간에-변수-주고-받기-2.2.6"><span class="toc-item-num">2.2.6&nbsp;&nbsp;</span>%store : Jupyter Notebook 간에 변수 주고 받기</a></span></li></ul></li><li><span><a href="#Performance" data-toc-modified-id="Performance-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Performance</a></span><ul class="toc-item"><li><span><a href="#%time,-%%time,-%timeit,-%%timeit-:-코드-실행-시간" data-toc-modified-id="%time,-%%time,-%timeit,-%%timeit-:-코드-실행-시간-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>%time, %%time, %timeit, %%timeit : 코드 실행 시간</a></span></li></ul></li></ul></li><li><span><a href="#pickle-:-변수에-담긴-내용을-파일로-저장하기" data-toc-modified-id="pickle-:-변수에-담긴-내용을-파일로-저장하기-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><strong>pickle</strong> : 변수에 담긴 내용을 파일로 저장하기</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a 
+href="#Managing-Jupyter-Notebook-Cell" 
+data-toc-modified-id="Managing-Jupyter-Notebook-Cell-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Managing Jupyter Notebook Cell</a></span></li><li><span><a href="#Some-Useful-IPython-Magic-Commands" data-toc-modified-id="Some-Useful-IPython-Magic-Commands-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Some Useful IPython Magic Commands</a></span><ul class="toc-item"><li><span><a href="#Assistants" data-toc-modified-id="Assistants-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Assistants</a></span><ul class="toc-item"><li><span><a href="#%lsmagic" data-toc-modified-id="%lsmagic-2.1.1"><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>%ismagic</a></span></li><li><span><a href="#?" data-toc-modified-id="?-2.1.2"><span class="toc-item-num">2.1.2&nbsp;&nbsp;</span>?</a></span></li><li><span><a href="#??" data-toc-modified-id="??-2.1.3"><span class="toc-item-num">2.1.3&nbsp;&nbsp;</span>??</a></span></li><li><span><a href="#%env-:-환경-변수-설정" data-toc-modified-id="%env-:-환경-변수-설정-2.1.4"><span class="toc-item-num">2.1.4&nbsp;&nbsp;</span>%env : 환경 변수 설정</a></span></li><li><span><a href="#%who-:-전역-변수-보기" data-toc-modified-id="%who-:-전역-변수-보기-2.1.5"><span class="toc-item-num">2.1.5&nbsp;&nbsp;</span>%who : 전역 변수 보기</a></span></li><li><span><a href="#%who_ls-:-전역-변수-리스트로-보기" data-toc-modified-id="%who_ls-:-전역-변수-리스트로-보기-2.1.6"><span class="toc-item-num">2.1.6&nbsp;&nbsp;</span>%who_ls : 전역 변수 리스트로 보기</a></span></li><li><span><a href="#%whos-:-전역-변수-상세-정보-보기" data-toc-modified-id="%whos-:-전역-변수-상세-정보-보기-2.1.7"><span class="toc-item-num">2.1.7&nbsp;&nbsp;</span>%whos : 전역 변수 상세 정보 보기</a></span></li><li><span><a href="#고화질-Retina" data-toc-modified-id="고화질-Retina-2.1.8"><span class="toc-item-num">2.1.8&nbsp;&nbsp;</span>고화질 Retina</a></span></li></ul></li><li><span><a href="#Writing,-Excuting,-Loading-Files" data-toc-modified-id="Writing,-Excuting,-Loading-Files-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Writing, Excuting, Loading Files</a></span><ul class="toc-item"><li><span><a href="#%%writefile-:-셀의-내용을-파일로-저장" data-toc-modified-id="%%writefile-:-셀의-내용을-파일로-저장-2.2.1"><span class="toc-item-num">2.2.1&nbsp;&nbsp;</span>%%writefile : 셀의 내용을 파일로 저장</a></span></li><li><span><a href="#%run-:-파이썬-코드-실행" data-toc-modified-id="%run-:-파이썬-코드-실행-2.2.2"><span class="toc-item-num">2.2.2&nbsp;&nbsp;</span>%run : 파이썬 코드 실행</a></span></li><li><span><a href="#!-:-셸-명령어-실행" data-toc-modified-id="!-:-셸-명령어-실행-2.2.3"><span class="toc-item-num">2.2.3&nbsp;&nbsp;</span>! : 셸 명령어 실행</a></span></li><li><span><a href="#%load-:-외부-코드-삽입" data-toc-modified-id="%load-:-외부-코드-삽입-2.2.4"><span class="toc-item-num">2.2.4&nbsp;&nbsp;</span>%load : 외부 코드 삽입</a></span></li><li><span><a href="#%pycat-:-외부-코드-보기" data-toc-modified-id="%pycat-:-외부-코드-보기-2.2.5"><span class="toc-item-num">2.2.5&nbsp;&nbsp;</span>%pycat : 외부 코드 보기</a></span></li><li><span><a href="#%store-:-Jupyter-Notebook-간에-변수-주고-받기" data-toc-modified-id="%store-:-Jupyter-Notebook-간에-변수-주고-받기-2.2.6"><span class="toc-item-num">2.2.6&nbsp;&nbsp;</span>%store : Jupyter Notebook 간에 변수 주고 받기</a></span></li></ul></li><li><span><a href="#Performance" data-toc-modified-id="Performance-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Performance</a></span><ul class="toc-item"><li><span><a href="#%time,-%%time,-%timeit,-%%timeit-:-코드-실행-시간" data-toc-modified-id="%time,-%%time,-%timeit,-%%timeit-:-코드-실행-시간-2.3.1"><span class="toc-item-num">2.3.1&nbsp;&nbsp;</span>%time, %%time, %timeit, %%timeit : 코드 실행 시간</a></span></li></ul></li></ul></li><li><span><a href="#pickle-:-변수에-담긴-내용을-파일로-저장하기" data-toc-modified-id="pickle-:-변수에-담긴-내용을-파일로-저장하기-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><strong>pickle</strong> : 변수에 담긴 내용을 파일로 저장하기</a></span></li></ul></div>
 
 # Managing Jupyter Notebook Cell
 
@@ -82,9 +84,9 @@ k?
 
 ## Assistants
 
-### %ismagic
+### %lsmagic
 
-**%ismagic**은 사용 가능한 모든 매직 명령어를 보여준다.
+**%lsmagic**은 사용 가능한 모든 매직 명령어를 보여준다.
 
 
 ```python
@@ -263,18 +265,18 @@ myfunction??
 
 
     {'TERM_SESSION_ID': 'w0t0p0:ED4BA11B-CF5A-4FB8-8393-A228AFA95AE1',
-     'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.PGNvq9efJz/Listeners',
+     'SSH_AUTH_SOCK': '...',
      'LC_TERMINAL_VERSION': '3.3.12',
      'COLORFGBG': '15;0',
      'ITERM_PROFILE': 'Default',
      'XPC_FLAGS': '0x0',
      'LANG': 'ko_KR.UTF-8',
-     'PWD': '/Users/jinsoopark/Dropbox/_data/document/lecture/big-data-analytics',
+     'PWD': '/Users/jinsoopark',
      'SHELL': '/bin/zsh',
      'TERM_PROGRAM_VERSION': '3.3.12',
      'TERM_PROGRAM': 'iTerm.app',
-     'PATH': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin',
-     'DISPLAY': '/private/tmp/com.apple.launchd.qTYDYz7iFD/org.macosforge.xquartz:0',
+     'PATH': '...'
+     'DISPLAY': '...',
      'LC_TERMINAL': 'iTerm2',
      'COLORTERM': 'truecolor',
      'TERM': 'xterm-color',
@@ -286,11 +288,11 @@ myfunction??
      'ITERM_SESSION_ID': 'w0t0p0:ED4BA11B-CF5A-4FB8-8393-A228AFA95AE1',
      '__CF_USER_TEXT_ENCODING': '0x1F5:0x3:0x33',
      'SHLVL': '1',
-     'OLDPWD': '/Users/jinsoopark/Dropbox/_data/document/lecture/big-data-analytics',
+     'OLDPWD': '...',
      'KEYTIMEOUT': '<hidden>',
-     'VIRTUAL_ENV': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds',
+     'VIRTUAL_ENV': '...',
      'PS1': '(3.8ds) %F{red}%%%f ',
-     '_': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds/bin/jupyter',
+     '_': '...',
      'KERNEL_LAUNCH_TIMEOUT': '40',
      'JPY_PARENT_PID': '665',
      'CLICOLOR': '1',
@@ -333,18 +335,18 @@ os.environ['PYTHONPATH']
 
 
     {'TERM_SESSION_ID': 'w0t0p0:ED4BA11B-CF5A-4FB8-8393-A228AFA95AE1',
-     'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.PGNvq9efJz/Listeners',
+     'SSH_AUTH_SOCK': '...',
      'LC_TERMINAL_VERSION': '3.3.12',
      'COLORFGBG': '15;0',
      'ITERM_PROFILE': 'Default',
      'XPC_FLAGS': '0x0',
      'LANG': 'ko_KR.UTF-8',
-     'PWD': '/Users/jinsoopark/Dropbox/_data/document/lecture/big-data-analytics',
+     'PWD': '/Users/jinsoopark',
      'SHELL': '/bin/zsh',
      'TERM_PROGRAM_VERSION': '3.3.12',
      'TERM_PROGRAM': 'iTerm.app',
-     'PATH': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin',
-     'DISPLAY': '/private/tmp/com.apple.launchd.qTYDYz7iFD/org.macosforge.xquartz:0',
+     'PATH': '...'
+     'DISPLAY': '...',
      'LC_TERMINAL': 'iTerm2',
      'COLORTERM': 'truecolor',
      'TERM': 'xterm-color',
@@ -356,11 +358,11 @@ os.environ['PYTHONPATH']
      'ITERM_SESSION_ID': 'w0t0p0:ED4BA11B-CF5A-4FB8-8393-A228AFA95AE1',
      '__CF_USER_TEXT_ENCODING': '0x1F5:0x3:0x33',
      'SHLVL': '1',
-     'OLDPWD': '/Users/jinsoopark/Dropbox/_data/document/lecture/big-data-analytics',
+     'OLDPWD': '...',
      'KEYTIMEOUT': '<hidden>',
-     'VIRTUAL_ENV': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds',
+     'VIRTUAL_ENV': '...',
      'PS1': '(3.8ds) %F{red}%%%f ',
-     '_': '/Users/jinsoopark/Dropbox/_data/venv/3.8ds/bin/jupyter',
+     '_': '...',
      'KERNEL_LAUNCH_TIMEOUT': '40',
      'JPY_PARENT_PID': '665',
      'CLICOLOR': '1',
