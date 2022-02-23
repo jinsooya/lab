@@ -1,8 +1,10 @@
 # 실습 자료실(Lab)
 
-## [Scraping](scraping)
+## [Jupyter](jupyter)
 
 ## [Pandas](pandas)
+
+## [Scraping](scraping)
 
 ## [NumPy](numpy)
 
