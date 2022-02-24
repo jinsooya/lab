@@ -2,7 +2,7 @@
 
 ## [한글 폰트 설치](korean-fonts-setup.md)
 
-## [Matplotlib 기초](matplotlib.md)
+## [Matplotlib 기초 실습 문제](matplotlib.md)
 
 ## [seaborn 기초](seaborn.md)
 

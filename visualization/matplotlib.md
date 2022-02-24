@@ -536,9 +536,8 @@ pyplot.show()
 
 앞서 그려본 9개의 도표는 전체 도표의 평면 크기가 작기 때문에 x축의 값들이 모두 보이지 않는 문제가 있었다.이 문제를 해결하기 위해 $ 17 \times 20 $ 크기로 도표를 그리도록 크기를 설정해보자.
 
-이렇게 하기 위해서는 **figure(*figsize=(17, 20)*)**을 입력하면 된다.
+이렇게 하기 위해서는 **figure(*figsize=(17, 20)*)** 을 입력하면 된다.
 
-**[SKIP - NOTE]**  
 [matplotlib.pyplot.subplots_adjust](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.subplots_adjust.html?highlight=subplots_adjust#matplotlib.pyplot.subplots_adjust)
 - Tune the subplot layout.
 - matplotlib.pyplot.**subplots_adjust**(*left=None, bottom=None, right=None, top=None, wspace=None, hspace=None*)
