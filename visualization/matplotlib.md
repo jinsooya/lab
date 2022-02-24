@@ -40,7 +40,7 @@ matplotlib.__version__
 
 
 ```python
-# 주로 아래 방식으로 matplot.pyplot을 plt이란 별칭으로 불러온다. 하지만 여기서는 그렇게 하지 않는디.
+# 주로 아래 방식으로 matplot.pyplot을 plt이란 별칭으로 불러오지만 여기서는 별칭을 사용하지 않는디.
 # from matplotlib import pyplot as plt 
 
 from matplotlib import pyplot 
