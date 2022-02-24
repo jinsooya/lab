@@ -42,17 +42,11 @@ matplotlib.__version__
 
 
 ```python
-# 주로 아래 방식으로 matplot.pyplot을 plt이란 별칭으로 불러온다.
+# 주로 아래 방식으로 matplot.pyplot을 plt이란 별칭으로 불러온다. 하지만 여기서는 그렇게 하지 않는디.
 # from matplotlib import pyplot as plt 
 
-from matplotlib import pyplot # as plt
-import numpy # as np
-```
-
-
-```python
-# matplotlib 도표를 출력 영역에 표시할 것을 지시하는 매직 명령어다.
-%matplotlib inline
+from matplotlib import pyplot 
+import numpy 
 ```
 
 # 기본 도표 작성하기
@@ -388,7 +382,7 @@ no_customers = 2031, 2623, 2750, 2908, 3103, 3288, 3453, 3667, 4021, 4300, 4732
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 서브플롯
@@ -806,7 +800,7 @@ no_customers = 2031, 2623, 2750, 2908, 3103, 3288, 3453, 3667, 4021, 4300, 4732
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## 막대 그래프 나란히 그리기
@@ -1385,7 +1379,7 @@ vietnamese = 3, 5, 10, 9
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## 문제 2 : 누적 막대 그래프를 그리시오
@@ -1402,7 +1396,7 @@ vietnamese = 3, 5, 10, 9
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## 문제 3 : 원 그래프를 그리시오.
@@ -1420,7 +1414,7 @@ vietnamese = 3, 5, 10, 9
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # Lab: 학급의 영어와 수학 점수 데이터 시각화
@@ -1456,7 +1450,7 @@ math_score = [
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## 문제 2 : 박스 그래프를 그리시오.
@@ -1474,7 +1468,7 @@ math_score = [
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## 문제 3 : 산점도를 그리시오.
@@ -1492,7 +1486,7 @@ math_score = [
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 - - -
