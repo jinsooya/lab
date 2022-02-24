@@ -12,8 +12,6 @@ Seoul National University
 
 - - -
 
-[credit: 김도훈(2019학번)]
-
 <h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#seaborn" data-toc-modified-id="seaborn-1">seaborn</a></span></li><li><span><a href="#seaborn-설치-및-불러오기" data-toc-modified-id="seaborn-설치-및-불러오기-2">seaborn 설치 및 불러오기</a></span></li><li><span><a href="#전처리" data-toc-modified-id="전처리-3">전처리</a></span><ul class="toc-item"><li><span><a href="#샘플-데이터-불러오기" data-toc-modified-id="샘플-데이터-불러오기-3.1">샘플 데이터 불러오기</a></span></li><li><span><a href="#불러온-데이터-열람하기" data-toc-modified-id="불러온-데이터-열람하기-3.2">불러온 데이터 열람하기</a></span></li></ul></li><li><span><a href="#막대-그래프" data-toc-modified-id="막대-그래프-4">막대 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-막대-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-막대-그래프-그리기-4.1">Lab: 타이타닉 데이터로 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#카운트-플롯" data-toc-modified-id="카운트-플롯-5">카운트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)-5.1">Lab: 타이타닉 데이터로 카운트 플롯 그리기(simple version)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기-5.2">Lab: 타이타닉 데이터로 카운트 플롯 그리기</a></span></li></ul></li><li><span><a href="#러그-플롯" data-toc-modified-id="러그-플롯-6">러그 플롯</a></span></li><li><span><a href="#커널-밀도-플롯" data-toc-modified-id="커널-밀도-플롯-7">커널 밀도 플롯</a></span></li><li><span><a href="#히스토그램" data-toc-modified-id="히스토그램-8">히스토그램</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기-8.1">Lab: 타이타닉 데이터로 러그 플롯, 커널 밀도 플롯, 히스토그램 그리기</a></span></li></ul></li><li><span><a href="#박스-그래프" data-toc-modified-id="박스-그래프-9">박스 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-박스-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-박스-그래프-그리기-9.1">Lab: 타이타닉 데이터로 박스 그래프 그리기</a></span></li></ul></li><li><span><a href="#바이올린-플롯" data-toc-modified-id="바이올린-플롯-10">바이올린 플롯</a></span></li><li><span><a href="#스트립-플롯" data-toc-modified-id="스트립-플롯-11">스트립 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-스트립-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-스트립-플롯-그리기-11.1">Lab: 타이타닉 데이터로 스트립 플롯 그리기</a></span></li></ul></li><li><span><a href="#스웜-플롯" data-toc-modified-id="스웜-플롯-12">스웜 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기-12.1">Lab: 타이타닉 데이터로 바이올린 플롯과 스웜 플롯 겹쳐 그리기</a></span></li></ul></li><li><span><a href="#산점도" data-toc-modified-id="산점도-13">산점도</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-산점도-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-산점도-그리기-13.1">Lab: 타이타닉 데이터로 산점도 그리기</a></span></li></ul></li><li><span><a href="#히트맵" data-toc-modified-id="히트맵-14">히트맵</a></span><ul class="toc-item"><li><span><a href="#피벗-테이블" data-toc-modified-id="피벗-테이블-14.1">피벗 테이블</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-히트맵-만들기" data-toc-modified-id="Lab:-타이타닉-데이터로-히트맵-만들기-14.2">Lab: 타이타닉 데이터로 히트맵 만들기</a></span></li></ul></li><li><span><a href="#조인트-플롯" data-toc-modified-id="조인트-플롯-15">조인트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-조인트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-조인트-플롯-그리기-15.1">Lab: 타이타닉 데이터로 조인트 플롯 그리기</a></span></li></ul></li><li><span><a href="#캣-플롯" data-toc-modified-id="캣-플롯-16">캣 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)-16.1">Lab: 타이타닉 데이터로 캣 플롯 그리기(가로 모양의 바이올린)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)-16.2">Lab: 타이타닉 데이터로 캣 플롯 그리기 (세로 모양의 바이올린)</a></span></li></ul></li><li><span><a href="#페어-플롯" data-toc-modified-id="페어-플롯-17">페어 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-다이아몬드-데이터로-페어-플롯-그리기" data-toc-modified-id="Lab:-다이아몬드-데이터로-페어-플롯-그리기-17.1">Lab: 다이아몬드 데이터로 페어 플롯 그리기</a></span><ul class="toc-item"><li><span><a href="#다이아몬드-데이터-불러오기" data-toc-modified-id="다이아몬드-데이터-불러오기-17.1.1">다이아몬드 데이터 불러오기</a></span></li><li><span><a href="#다이아몬드-데이터에-대한-설명" data-toc-modified-id="다이아몬드-데이터에-대한-설명-17.1.2">다이아몬드 데이터에 대한 설명</a></span></li></ul></li></ul></li><li><span><a href="#조인트-플롯-vs.-캣-플롯-vs.--페어-플롯" data-toc-modified-id="조인트-플롯-vs.-캣-플롯-vs.--페어-플롯-18">조인트 플롯 vs. 캣 플롯 vs.  페어 플롯</a></span></li><li><span><a href="#스타일" data-toc-modified-id="스타일-19">스타일</a></span></li></ul></div>
 
@@ -488,7 +486,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 카운트 플롯
@@ -577,7 +575,7 @@ survived 값 중
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## Lab: 타이타닉 데이터로 카운트 플롯 그리기
@@ -601,7 +599,7 @@ survived 값 중
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 러그 플롯
@@ -847,7 +845,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 박스 그래프
@@ -969,7 +967,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 바이올린 플롯
@@ -1278,7 +1276,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 스웜 플롯
@@ -1458,7 +1456,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 산점도
@@ -1524,7 +1522,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 히트맵
@@ -1779,7 +1777,7 @@ print(bill_pivot)
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 조인트 플롯
@@ -1924,7 +1922,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 캣 플롯
@@ -2127,7 +2125,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 ## Lab: 타이타닉 데이터로 캣 플롯 그리기(세로 모양의 바이올린)
@@ -2149,7 +2147,7 @@ pyplot.show()
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 페어 플롯
@@ -2314,7 +2312,7 @@ print(diamonds)
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # 조인트 플롯 vs. 캣 플롯 vs.  페어 플롯

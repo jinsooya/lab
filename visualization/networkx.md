@@ -12,8 +12,6 @@ Seoul National University
 
 - - -
 
-[credit: 김도훈(2019학번)]
-
 <h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#기초-이론" data-toc-modified-id="기초-이론-1">기초 이론</a></span><ul class="toc-item"><li><span><a href="#그래프" data-toc-modified-id="그래프-1.1">그래프</a></span></li><li><span><a href="#그래프-분류" data-toc-modified-id="그래프-분류-1.2">그래프 분류</a></span></li><li><span><a href="#그래프-관련-용어" data-toc-modified-id="그래프-관련-용어-1.3">그래프 관련 용어</a></span></li><li><span><a href="#그래프의-표현" data-toc-modified-id="그래프의-표현-1.4">그래프의 표현</a></span></li><li><span><a href="#네트워크" data-toc-modified-id="네트워크-1.5">네트워크</a></span></li><li><span><a href="#네트워크-분류" data-toc-modified-id="네트워크-분류-1.6">네트워크 분류</a></span></li><li><span><a href="#네트워크-특성" data-toc-modified-id="네트워크-특성-1.7">네트워크 특성</a></span></li><li><span><a href="#네트워크-분석의-개요" data-toc-modified-id="네트워크-분석의-개요-1.8">네트워크 분석의 개요</a></span></li></ul></li><li><span><a href="#네트워크-구성" data-toc-modified-id="네트워크-구성-2">네트워크 구성</a></span><ul class="toc-item"><li><span><a href="#네트워크의-그래프-구조-생성" data-toc-modified-id="네트워크의-그래프-구조-생성-2.1">네트워크의 그래프 구조 생성</a></span></li><li><span><a href="#노드와-엣지-추가" data-toc-modified-id="노드와-엣지-추가-2.2">노드와 엣지 추가</a></span></li><li><span><a href="#노드와-엣지-열람" data-toc-modified-id="노드와-엣지-열람-2.3">노드와 엣지 열람</a></span></li><li><span><a href="#노드와-엣지-삭제" data-toc-modified-id="노드와-엣지-삭제-2.4">노드와 엣지 삭제</a></span></li><li><span><a href="#노드와-엣지의-정보-열람" data-toc-modified-id="노드와-엣지의-정보-열람-2.5">노드와 엣지의 정보 열람</a></span></li></ul></li><li><span><a href="#시각화" data-toc-modified-id="시각화-3">시각화</a></span><ul class="toc-item"><li><span><a href="#네트워크-그래프-구조의-시각화" data-toc-modified-id="네트워크-그래프-구조의-시각화-3.1">네트워크 그래프 구조의 시각화</a></span></li><li><span><a href="#네트워크-레이아웃" data-toc-modified-id="네트워크-레이아웃-3.2">네트워크 레이아웃</a></span></li></ul></li><li><span><a href="#네트워크-분석-기법" data-toc-modified-id="네트워크-분석-기법-4">네트워크 분석 기법</a></span><ul class="toc-item"><li><span><a href="#네트워크-수준-분석" data-toc-modified-id="네트워크-수준-분석-4.1">네트워크 수준 분석</a></span></li><li><span><a href="#노드-수준-분석" data-toc-modified-id="노드-수준-분석-4.2">노드 수준 분석</a></span><ul class="toc-item"><li><span><a href="#연결-정도" data-toc-modified-id="연결-정도-4.2.1">연결 정도</a></span></li><li><span><a href="#연결-강도" data-toc-modified-id="연결-강도-4.2.2">연결 강도</a></span></li><li><span><a href="#연결-거리" data-toc-modified-id="연결-거리-4.2.3">연결 거리</a></span></li><li><span><a href="#직경" data-toc-modified-id="직경-4.2.4">직경</a></span></li><li><span><a href="#평균-연결-거리" data-toc-modified-id="평균-연결-거리-4.2.5">평균 연결 거리</a></span></li><li><span><a href="#도달-가능성" data-toc-modified-id="도달-가능성-4.2.6">도달 가능성</a></span></li><li><span><a href="#보행" data-toc-modified-id="보행-4.2.7">보행</a></span></li><li><span><a href="#경로" data-toc-modified-id="경로-4.2.8">경로</a></span></li></ul></li><li><span><a href="#네트워크에-내재된-특성-분석" data-toc-modified-id="네트워크에-내재된-특성-분석-4.3">네트워크에 내재된 특성 분석</a></span><ul class="toc-item"><li><span><a href="#호혜성" data-toc-modified-id="호혜성-4.3.1">호혜성</a></span></li><li><span><a href="#전이성" data-toc-modified-id="전이성-4.3.2">전이성</a></span></li><li><span><a href="#군집화-계수" data-toc-modified-id="군집화-계수-4.3.3">군집화 계수</a></span></li></ul></li><li><span><a href="#중심성-분석" data-toc-modified-id="중심성-분석-4.4">중심성 분석</a></span><ul class="toc-item"><li><span><a href="#연결-중심성" data-toc-modified-id="연결-중심성-4.4.1">연결 중심성</a></span></li><li><span><a href="#매개-중심성" data-toc-modified-id="매개-중심성-4.4.2">매개 중심성</a></span></li><li><span><a href="#근접-중심성" data-toc-modified-id="근접-중심성-4.4.3">근접 중심성</a></span></li><li><span><a href="#고유벡터-중심성" data-toc-modified-id="고유벡터-중심성-4.4.4">고유벡터 중심성</a></span></li></ul></li></ul></li><li><span><a href="#Lab:-네트워크-작성" data-toc-modified-id="Lab:-네트워크-작성-5">Lab: 네트워크 작성</a></span></li><li><span><a href="#Lab:-네트워크-수준-분석" data-toc-modified-id="Lab:-네트워크-수준-분석-6">Lab: 네트워크 수준 분석</a></span></li><li><span><a href="#Lab:-노드-수준-분석" data-toc-modified-id="Lab:-노드-수준-분석-7">Lab: 노드 수준 분석</a></span></li><li><span><a href="#Lab:-중심성-분석" data-toc-modified-id="Lab:-중심성-분석-8">Lab: 중심성 분석</a></span></li><li><span><a href="#Lab:-미국-주요-도시-간-거리를-표현하는-그래프-시각화" data-toc-modified-id="Lab:-미국-주요-도시-간-거리를-표현하는-그래프-시각화-9">Lab: 미국 주요 도시 간 거리를 표현하는 그래프 시각화</a></span></li></ul></div>
 
@@ -2033,7 +2031,7 @@ _ _ _
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # Lab: 네트워크 수준 분석
@@ -2059,7 +2057,7 @@ _ _ _
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # Lab: 노드 수준 분석
@@ -2095,7 +2093,7 @@ _ _ _
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # Lab: 중심성 분석
@@ -2142,7 +2140,7 @@ _ _ _
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 # Lab: 미국 주요 도시 간 거리를 표현하는 그래프 시각화
@@ -2175,7 +2173,7 @@ _ _ _
 
 
 ```python
-# Your answer here
+# YOUR CODE HERE
 ```
 
 - - -
