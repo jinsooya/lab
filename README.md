@@ -4,11 +4,11 @@
 
 ## [Pandas](pandas)
 
+## [Visualization](visualization)
+
 ## [Scraping](scraping)
 
 ## [NumPy](numpy)
-
-## [Visualization](visualization)
 
 ## [Databases](db)
 
