@@ -1,6 +1,6 @@
 # 시각화(Visualization)
 
-## [한글 폰트 설치](korean-fonts-setup.md)
+## [한글 폰트 설치](https://jinsooya.github.io/howto/korean-fonts-setup.html)
 
 ## [Matplotlib 기초 실습](matplotlib-sol.md)
 
