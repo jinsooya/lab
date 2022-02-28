@@ -10,6 +10,7 @@
 Intelligent Data Semantics Lab  
 Seoul National University
 
+- - -
 
 <div align='right'><font size='-1'>[credit: 진솔, 김도훈]</font></div>
 
