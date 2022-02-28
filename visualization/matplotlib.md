@@ -12,8 +12,10 @@ Seoul National University
 
 - - -
 
+<div align='right'><font size='-1'>[partial credit: 김도훈]</font></div>
+
 <h3>Table of Contents<span class="tocSkip"></span></h3>
-<div class="toc"><ul class="toc-item"><li><span><a href="#matplotlib" data-toc-modified-id="matplotlib-1">matplotlib</a></span></li><li><span><a href="#matplotlib-설치-및-불러오기" data-toc-modified-id="matplotlib-설치-및-불러오기-2">matplotlib 설치 및 불러오기</a></span></li><li><span><a href="#기본-도표-작성하기" data-toc-modified-id="기본-도표-작성하기-3">기본 도표 작성하기</a></span><ul class="toc-item"><li><span><a href="#선-색상-변경" data-toc-modified-id="선-색상-변경-3.1">선 색상 변경</a></span></li><li><span><a href="#선-모양-변경" data-toc-modified-id="선-모양-변경-3.2">선 모양 변경</a></span></li><li><span><a href="#제목과-라벨" data-toc-modified-id="제목과-라벨-3.3">제목과 라벨</a></span></li><li><span><a href="#도표-구간의-확대-및-축소" data-toc-modified-id="도표-구간의-확대-및-축소-3.4">도표 구간의 확대 및 축소</a></span></li><li><span><a href="#범례(legend)" data-toc-modified-id="범례(legend)-3.5">범례(legend)</a></span></li><li><span><a href="#주석(annotation)" data-toc-modified-id="주석(annotation)-3.6">주석(annotation)</a></span></li><li><span><a href="#Lab:-상점-고객수-데이터로-선-그래프-그리기" data-toc-modified-id="Lab:-상점-고객수-데이터로-선-그래프-그리기-3.7">Lab: 상점 고객수 데이터로 선 그래프 그리기</a></span></li></ul></li><li><span><a href="#서브플롯" data-toc-modified-id="서브플롯-4">서브플롯</a></span><ul class="toc-item"><li><span><a href="#도표-크기-조정" data-toc-modified-id="도표-크기-조정-4.1">도표 크기 조정</a></span></li><li><span><a href="#서브플롯과-전체-도표의-제목-설정" data-toc-modified-id="서브플롯과-전체-도표의-제목-설정-4.2">서브플롯과 전체 도표의 제목 설정</a></span></li></ul></li><li><span><a href="#다양한-도표-그리기" data-toc-modified-id="다양한-도표-그리기-5">다양한 도표 그리기</a></span><ul class="toc-item"><li><span><a href="#막대-그래프" data-toc-modified-id="막대-그래프-5.1">막대 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-상점-고객수-데이터로-막대-그래프-그리기" data-toc-modified-id="Lab:-상점-고객수-데이터로-막대-그래프-그리기-5.1.1">Lab: 상점 고객수 데이터로 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#막대-그래프-나란히-그리기" data-toc-modified-id="막대-그래프-나란히-그리기-5.2">막대 그래프 나란히 그리기</a></span></li><li><span><a href="#누적-막대-그래프" data-toc-modified-id="누적-막대-그래프-5.3">누적 막대 그래프</a></span><ul class="toc-item"><li><span><a href="#100%-누적-막대-그래프-그리기" data-toc-modified-id="100%-누적-막대-그래프-그리기-5.3.1">100% 누적 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#원-그래프" data-toc-modified-id="원-그래프-5.4">원 그래프</a></span></li><li><span><a href="#히스토그램" data-toc-modified-id="히스토그램-5.5">히스토그램</a></span></li><li><span><a href="#박스-그래프" data-toc-modified-id="박스-그래프-5.6">박스 그래프</a></span></li><li><span><a href="#산점도" data-toc-modified-id="산점도-5.7">산점도</a></span></li></ul></li><li><span><a href="#Lab:-아파트-내-외국인-국적-및-연령-데이터-시각화" data-toc-modified-id="Lab:-아파트-내-외국인-국적-및-연령-데이터-시각화-6">Lab: 아파트 내 외국인 국적 및 연령 데이터 시각화</a></span><ul class="toc-item"><li><span><a href="#문제-1-:-막대-그래프를-나란히-그리시오." data-toc-modified-id="문제-1-:-막대-그래프를-나란히-그리시오.-6.1">문제 1 : 막대 그래프를 나란히 그리시오.</a></span></li><li><span><a href="#문제-2-:-누적-막대-그래프를-그리시오" data-toc-modified-id="문제-2-:-누적-막대-그래프를-그리시오-6.2">문제 2 : 누적 막대 그래프를 그리시오</a></span></li><li><span><a href="#문제-3-:-원-그래프를-그리시오." data-toc-modified-id="문제-3-:-원-그래프를-그리시오.-6.3">문제 3 : 원 그래프를 그리시오.</a></span></li></ul></li><li><span><a href="#Lab:-학급의-영어와-수학-점수-데이터-시각화" data-toc-modified-id="Lab:-학급의-영어와-수학-점수-데이터-시각화-7">Lab: 학급의 영어와 수학 점수 데이터 시각화</a></span><ul class="toc-item"><li><span><a href="#문제-1-:-히스토그램을-그리시오." data-toc-modified-id="문제-1-:-히스토그램을-그리시오.-7.1">문제 1 : 히스토그램을 그리시오.</a></span></li><li><span><a href="#문제-2-:-박스-그래프를-그리시오." data-toc-modified-id="문제-2-:-박스-그래프를-그리시오.-7.2">문제 2 : 박스 그래프를 그리시오.</a></span></li><li><span><a href="#문제-3-:-산점도를-그리시오." data-toc-modified-id="문제-3-:-산점도를-그리시오.-7.3">문제 3 : 산점도를 그리시오.</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#matplotlib" data-toc-modified-id="matplotlib-1">matplotlib</a></span></li><li><span><a href="#matplotlib-설치-및-불러오기" data-toc-modified-id="matplotlib-설치-및-불러오기-2">matplotlib 설치 및 불러오기</a></span></li><li><span><a href="#기본-도표-작성하기" data-toc-modified-id="기본-도표-작성하기-3">기본 도표 작성하기</a></span><ul class="toc-item"><li><span><a href="#선-색상-변경" data-toc-modified-id="선-색상-변경-3.1">선 색상 변경</a></span></li><li><span><a href="#선-마커-변경" data-toc-modified-id="선-마커-변경-3.2">선 마커 변경</a></span></li><li><span><a href="#선-스타일-변경" data-toc-modified-id="선-스타일-변경-3.3">선 스타일 변경</a></span></li><li><span><a href="#제목과-라벨" data-toc-modified-id="제목과-라벨-3.4">제목과 라벨</a></span></li><li><span><a href="#도표-구간의-확대-및-축소" data-toc-modified-id="도표-구간의-확대-및-축소-3.5">도표 구간의 확대 및 축소</a></span></li><li><span><a href="#틱(tick)-설정" data-toc-modified-id="틱(tick)-설정-3.6">틱(tick) 설정</a></span></li><li><span><a href="#그리드(grid)-설정" data-toc-modified-id="그리드(grid)-설정-3.7">그리드(grid) 설정</a></span></li><li><span><a href="#범례(legend)" data-toc-modified-id="범례(legend)-3.8">범례(legend)</a></span></li><li><span><a href="#주석(annotation)" data-toc-modified-id="주석(annotation)-3.9">주석(annotation)</a></span></li><li><span><a href="#여러-개의-선-그리기" data-toc-modified-id="여러-개의-선-그리기-3.10">여러 개의 선 그리기</a></span></li><li><span><a href="#Lab:-상점-고객수-데이터로-선-그래프-그리기" data-toc-modified-id="Lab:-상점-고객수-데이터로-선-그래프-그리기-3.11">Lab: 상점 고객수 데이터로 선 그래프 그리기</a></span></li></ul></li><li><span><a href="#도표의-구성" data-toc-modified-id="도표의-구성-4">도표의 구성</a></span><ul class="toc-item"><li><span><a href="#Figure-객체" data-toc-modified-id="Figure-객체-4.1">Figure 객체</a></span></li><li><span><a href="#Axes-객체" data-toc-modified-id="Axes-객체-4.2">Axes 객체</a></span></li></ul></li><li><span><a href="#서브플롯" data-toc-modified-id="서브플롯-5">서브플롯</a></span><ul class="toc-item"><li><span><a href="#도표-크기-조정" data-toc-modified-id="도표-크기-조정-5.1">도표 크기 조정</a></span></li><li><span><a href="#서브플롯과-전체-도표의-제목-설정" data-toc-modified-id="서브플롯과-전체-도표의-제목-설정-5.2">서브플롯과 전체 도표의 제목 설정</a></span></li></ul></li><li><span><a href="#다양한-도표-그리기" data-toc-modified-id="다양한-도표-그리기-6">다양한 도표 그리기</a></span><ul class="toc-item"><li><span><a href="#막대-그래프" data-toc-modified-id="막대-그래프-6.1">막대 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-상점-고객수-데이터로-막대-그래프-그리기" data-toc-modified-id="Lab:-상점-고객수-데이터로-막대-그래프-그리기-6.1.1">Lab: 상점 고객수 데이터로 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#막대-그래프-나란히-그리기" data-toc-modified-id="막대-그래프-나란히-그리기-6.2">막대 그래프 나란히 그리기</a></span></li><li><span><a href="#누적-막대-그래프" data-toc-modified-id="누적-막대-그래프-6.3">누적 막대 그래프</a></span><ul class="toc-item"><li><span><a href="#100%-누적-막대-그래프-그리기" data-toc-modified-id="100%-누적-막대-그래프-그리기-6.3.1">100% 누적 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#원-그래프" data-toc-modified-id="원-그래프-6.4">원 그래프</a></span></li><li><span><a href="#히스토그램" data-toc-modified-id="히스토그램-6.5">히스토그램</a></span></li><li><span><a href="#박스-그래프" data-toc-modified-id="박스-그래프-6.6">박스 그래프</a></span></li><li><span><a href="#산점도" data-toc-modified-id="산점도-6.7">산점도</a></span></li><li><span><a href="#등고선-그래프" data-toc-modified-id="등고선-그래프-6.8">등고선 그래프</a></span></li><li><span><a href="#3D-표면도" data-toc-modified-id="3D-표면도-6.9">3D 표면도</a></span></li></ul></li><li><span><a href="#Lab:-아파트-내-외국인-국적-및-연령-데이터-시각화" data-toc-modified-id="Lab:-아파트-내-외국인-국적-및-연령-데이터-시각화-7">Lab: 아파트 내 외국인 국적 및 연령 데이터 시각화</a></span><ul class="toc-item"><li><span><a href="#문제-1-:-막대-그래프를-나란히-그리시오." data-toc-modified-id="문제-1-:-막대-그래프를-나란히-그리시오.-7.1">문제 1 : 막대 그래프를 나란히 그리시오.</a></span></li><li><span><a href="#문제-2-:-누적-막대-그래프를-그리시오" data-toc-modified-id="문제-2-:-누적-막대-그래프를-그리시오-7.2">문제 2 : 누적 막대 그래프를 그리시오</a></span></li><li><span><a href="#문제-3-:-원-그래프를-그리시오." data-toc-modified-id="문제-3-:-원-그래프를-그리시오.-7.3">문제 3 : 원 그래프를 그리시오.</a></span></li></ul></li><li><span><a href="#Lab:-학급의-영어와-수학-점수-데이터-시각화" data-toc-modified-id="Lab:-학급의-영어와-수학-점수-데이터-시각화-8">Lab: 학급의 영어와 수학 점수 데이터 시각화</a></span><ul class="toc-item"><li><span><a href="#문제-1-:-히스토그램을-그리시오." data-toc-modified-id="문제-1-:-히스토그램을-그리시오.-8.1">문제 1 : 히스토그램을 그리시오.</a></span></li><li><span><a href="#문제-2-:-박스-그래프를-그리시오." data-toc-modified-id="문제-2-:-박스-그래프를-그리시오.-8.2">문제 2 : 박스 그래프를 그리시오.</a></span></li><li><span><a href="#문제-3-:-산점도를-그리시오." data-toc-modified-id="문제-3-:-산점도를-그리시오.-8.3">문제 3 : 산점도를 그리시오.</a></span></li></ul></li></ul></div>
 
 # matplotlib
 
@@ -26,25 +28,24 @@ Seoul National University
 
 
 ```python
-!python -m pip install matplotlib
+!python -m pip install --upgrade matplotlib numpy
 # 또는 
-# !pip install matplotlib  
+# !pip install --upgrade matplotlib numpy
 ```
 
 
 ```python
 # 버전 확인하기
-import matplotlib
-matplotlib.__version__
+import matplotlib, numpy
+print('Matplotlib version...', matplotlib.__version__)
+print('NumPy version........', numpy.__version__)
 ```
 
 
 ```python
 # 주로 아래 방식으로 matplot.pyplot을 plt이란 별칭으로 불러오지만 여기서는 별칭을 사용하지 않는디.
 # from matplotlib import pyplot as plt 
-
 from matplotlib import pyplot 
-import numpy 
 ```
 
 # 기본 도표 작성하기
@@ -133,11 +134,11 @@ pyplot.show()
 
 
 ```python
-# --- 마커가 더하기(plus filled)인 선 그래프를 작성한다.
+# --- 마커가 채워진 더하기(filled plus)인 선 그래프를 작성한다.
 x = numpy.arange(1, 10)
 y = x * 3
 
-# 'P': plus (filled) marker
+# 'P': filled plus marker
 pyplot.plot(__TODO__)
 pyplot.show()
 ```
@@ -251,7 +252,7 @@ pyplot.show()
 ## 범례(legend)
 
 도표에서 여러 개의 선을 동시에 그릴 때, 각 선을 구분하기 위해 선마다 라벨을 달고 각 라벨의 이름을 보여줄 수 있는데 이를 범례(legend)라고 한다.
-- 범례를 사용하려면 **plot**()의 매개변수 ***label*** 에 선 이름을 지정하고 **legend**(*loc*='위치') 메소드를 호출하면 범례를 도표 상에 그려준다.
+- 범례를 사용하려면 **plot**의 매개변수 ***label*** 에 선 이름을 지정하고 **legend**(*loc*='위치') 메소드를 호출하면 범례를 도표 상에 그려준다.
 - 범례의 위치는 아래 링크를 참고하면 된다.
     + https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.legend.html
 
@@ -259,7 +260,7 @@ pyplot.show()
 - Place a legend on the axes.
 - matplotlib.pyplot.**legend**(_\*args, \**kwargs_)
 
-도표에 여러 개의 선을 추가하려면 **plot**() 메소드를 **show()** 메소드 전에 여러 번 호출한다.
+도표에 여러 개의 선을 추가하려면 **plot** 메소드를 **show** 메소드 전에 여러 번 호출한다.
 
 다음 예는 두 개의 선을 그린 후, 좌측 상단에 범례를 표현한 것이다.
 
@@ -287,7 +288,7 @@ pyplot.show()
 
 ![matplot11](img/matplot11.png)
 
-앞의 예에서는 **plot**() 메소드의 매개변수 ***label*** 에 선의 이름을 지정했는데, **legend**() 메소드에서도 선의 이름을 지정할 수 있다.
+앞의 예에서는 **plot** 메소드의 매개변수 ***label*** 에 선의 이름을 지정했는데, **legend**() 메소드에서도 선의 이름을 지정할 수 있다.
 
 각 선에 대한 범례를 추가하려면 각 선에 대한 범례를 순서대로 지정하여 **legend**(*['선1범례', 선2범례', ...], ...*) 메소드를 호출하면 된다.
 
@@ -317,7 +318,7 @@ pyplot.show()
 ## 주석(annotation)
 
 도표의 특정 좌표를 가리키는 화살표를 그린 후, 그 화살표에 문자열을 출력하는 기능이다. 
-- **annotate**() 메소드를 **annotate(*'text', xy, xytext, arrowprops*)** 형식으로 사용하면 된다.
+- **annotate** 메소드를 **annotate(*'text', xy, xytext, arrowprops*)** 형식으로 사용하면 된다.
     + ***'text'*** 는 주석에 표시하는 문자열이고,   
     + ***xy*** 는 화살표가 가리키는 점의 위치,  
     + ***xytext*** 는 문자열을 출력할 위치,  
@@ -417,7 +418,7 @@ pyplot.show()
 
 ![matplot14](img/matplot14.png)
 
-**subplot**() 안의 숫자를 변경하여 평면의 줄과 칸을 변경할 수 있다.
+**subplot** 안의 숫자를 변경하여 평면의 줄과 칸을 변경할 수 있다.
 
 **2, 1** 즉, 2줄 1칸의 평면을 만들어 위와 아래에 두 개의 서브플롯을 그리는 도표를 작성한다.
 
@@ -443,7 +444,7 @@ pyplot.show()
 
 그런데 2줄 1칸의 평면에서 도표를 그릴 때 첫 번째 도표의 x축과 두 번째 도표의 제목이 앞서 예처럼 겹칠 수가 있다. 
 
-겹치기를 방지하려면 **subplots_adjust**() 메소드로 두 도표 사이의 간격을 설정하면 된다.
+겹치기를 방지하려면 **subplots_adjust** 메소드로 두 도표 사이의 간격을 설정하면 된다.
 
 [matplotlib.pyplot.subplots_adjust](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.subplots_adjust.html#matplotlib.pyplot.subplots_adjust)
 - Tune the subplot layout.
@@ -475,6 +476,30 @@ pyplot.plot(x, y2, 'g')
 
 # 서브플롯 사이의 높이 간격을 조정한다. 기본값는 0.2다.
 pyplot.subplots_adjust(__TODO__)
+pyplot.show()
+```
+
+**실행 결과**  
+
+![matplot16](img/matplot16.png)
+
+간격을 자동으로 조정하려면 **tight_layout** 메소드를 사용하면 된다.
+
+```python
+# 2줄 1칸의 서브플롯을 설정하면서 겹치기를 방지한다.
+x = numpy.arange(1, 10)  # 두 서브플롯의 x축
+y1 = x * 3               # 위쪽 서브플롯의 y축
+y2 = x * 4               # 아래쪽 서브플롯의 y축
+
+# 2줄 1칸의 서브플롯을 설정한다.
+pyplot.subplot(__TODO__)  # 위쪽 서브플롯
+pyplot.plot(x, y1, 'or')
+
+pyplot.subplot(__TODO__)  # 아래쪽 서브플롯
+pyplot.plot(x, y2, 'g')
+
+# 서브플롯 사이의 높이 간격을 자동으로 맞춘다.
+pyplot.__TODO__  
 pyplot.show()
 ```
 
@@ -514,7 +539,7 @@ pyplot.show()
 ## 도표 크기 조정
 
 도표의 크기를 변경할 수 있다.
-- **figure**() 메소드의 매개변수 ***figsize*** 에 전달인자를 ***figsize=(가로, 세로)*** 형식으로 지정하면 도표가 그려질 전체 그림의 크기를 설정할 수 있다.
+- **figure** 메소드의 매개변수 ***figsize*** 에 전달인자를 ***figsize=(가로, 세로)*** 형식으로 지정하면 도표가 그려질 전체 그림의 크기를 설정할 수 있다.
 
 [matplotlib.pyplot.figure](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure)
 - Create a new figure.
@@ -576,9 +601,9 @@ pyplot.show()
 
 ## 서브플롯과 전체 도표의 제목 설정
 
-pyplot.**suptitle()** 메소드를 사용하면 된다. 
+pyplot.**suptitle** 메소드를 사용하면 된다. 
 
-pyplot.**title()**은 **axes**의 제목을 설정할 때 사용하는 메소드다. 즉, 전체 도표 안에 있는 **각각의 서브플롯에 제목을 설정**한다고 생각하면 된다. 따라서 하나의 도표만 그린다면 pyplot.**title()**을 사용하는게 일반적이다. 
+pyplot.**title** 메소드는 **axes**의 제목을 설정할 때 사용하는 메소드다. 즉, 전체 도표 안에 있는 각각의 서브플롯에 제목을 설정한다고 생각하면 된다. 따라서 하나의 도표만 그린다면 pyplot.**title()** 을 사용하는게 일반적이다. 하지만 여러 개의 도표를 그리고 이 전체 도표를 대표하는 제목을 작성할 필요가 있을 때 pyplot.**suptitle()** 메소드를 사용한다. 
 
 하지만 여러 개의 도표를 그리고 이 전체 도표를 대표하는 제목을 작성할 필요가 있을 때 pyplot.**suptitle()** 메소드를 사용한다. 
 
@@ -622,13 +647,13 @@ matplotlib는 앞서 그린 선 그래프 이외에 여러 다양한 도표를 �
 
 이를 위해 각 도표마다 다른 메소드를 호출한다. 
 
-예를 들어, 막대 그래프를 그리기 위해서는 **bar()** 메소드를, 원 그래프를 그리기 위해서는 **pie()** 메소드를, 히스토그램을 그리기 위해선 **hist()** 메소드를 호출한다.
+예를 들어, 막대 그래프를 그리기 위해서는 **bar** 메소드를, 원 그래프를 그리기 위해서는 **pie** 메소드를, 히스토그램을 그리기 위해선 **hist** 메소드를 호출한다.
 
 ## 막대 그래프
 
 막대 그래프 데이터 값에 비례하여 높이와 길이를 지닌 직사각형 막대로 범주형 데이터를 표현하는 도표다.
 
-막대 그래프를 작성하려면 **bar()** 메소드를 주로 **bar(*x, height, width=0.8, bottom=None , align='center'*)** 형식으로 사용하면 된다.
+막대 그래프를 작성하려면 **bar** 메소드를 주로 **bar(*x, height, width=0.8, bottom=None , align='center'*)** 형식으로 사용하면 된다.
 - ***x*** 는 표현하고자 하는 막대들,  
 - ***height*** 은 이 막대들의 높이,  
 - ***width*** 는 막대의 너비,  
@@ -659,7 +684,7 @@ pyplot.show()
 
 ![matplot20](img/matplot20.png)
 
-만약 x축의 눈금 라벨이 너무 긴 경우 **xticks()** 메소드의 매개변수 ***rotation*** 을 사용하여 글자를 회전시킬 수 있다.
+만약 x축의 눈금 라벨이 너무 긴 경우 **xticks** 메소드의 매개변수 ***rotation*** 을 사용하여 글자를 회전시킬 수 있다.
 
 [matplotlib.pyplot.xticks](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xticks.html#matplotlib.pyplot.xticks)
 - Get or set the current tick locations and labels of the x-axis.
@@ -688,7 +713,7 @@ pyplot.show()
 
 모든 막대 당 하나의 눈금이 기본으로 붙는 게 아니기 때문에 많은 막대를 그릴 경우에는 자연스럽게 눈금이 생략될 수 있다. 
 
-이런 때는 **xticks()** 메소드를 사용하여 눈금의 위치와 이름을 설정하면 된다. 
+이런 때는 **xticks** 메소드를 사용하여 눈금의 위치와 이름을 설정하면 된다. 
 - 매개변수인 ***ticks*** 에는 눈금의 위치가, ***labels*** 에는 눈금의 이름이 들어가게 된다. 
 - ***ticks*** 와 ***labels*** 는 같이 설정해야 하며 크기가 동일해야 한다. 
 - 이 중 하나가 빠지면 오류가 나며 ***ticks*** 의 숫자와 ***labels*** 의 숫자가 일치하지 않으면 잘못된 위치에 눈금이 생길 수도 있으니 주의해야 한다.
@@ -727,11 +752,11 @@ pyplot.show()
 
 ![matplot22](img/matplot22.png)
 
-한 화면에 여러 개의 도표를 그릴 때 사용하는 서브플롯에서는 **set_xticks()**와 **set_xtickslabels()** 메소드를 사용한다.
+한 화면에 여러 개의 도표를 그릴 때 사용하는 서브플롯에서는 **set_xticks**과 **set_xtickslabels** 메소드를 사용한다.
 
-만들고자 하는 서브플롯에 각각 **set_xticks()** 메소드로 눈금의 위치를 지정하고 **set_xtickslabels()** 메소드로 눈금의 이름을 설정하면 된다.
+만들고자 하는 서브플롯에 각각 **set_xticks** 메소드로 눈금의 위치를 지정하고 **set_xtickslabels** 메소드로 눈금의 이름을 설정하면 된다.
 
-다음 예는 국적별 남자 외국인 관광객 수와 여자 외국인 관광객 수를 막대 그래프로 작성한 코드다. 두 개의 서브플롯을 만들어 각각 **set_xticks()**와 **set_xtickslabels()**를 이용하여 눈금과 라벨을 설정하고 **tight_layout()** 메소드로 그래프가 겹치지 않도록 설정한다.
+다음 예는 국적별 남자 외국인 관광객 수와 여자 외국인 관광객 수를 막대 그래프로 작성한 코드다. 두 개의 서브플롯을 만들어 각각 **set_xticks**과 **set_xtickslabels()**를 이용하여 눈금과 라벨을 설정하고 **tight_layout** 메소드로 그래프가 겹치지 않도록 설정한다.
 
 [matplotlib.pyplot.tight_layout](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout)
 - Automatically adjust subplot parameters to give specified padding.
@@ -773,6 +798,23 @@ pyplot.show()
 
 ![matplot23](img/matplot23.png)
 
+**barh**를 사용하면 수평 막대 그래프를 그릴 수 있다.
+
+그리고 **bar**와 **barh**의 매개변수인 ***xerr***나 ***yerr***로 에러 바(error bar)를 추가할 수 있고, ***alpha***로 투명도를 지정할 수 있다.(**0**이면 완전 투명, **1**이면 완전 불투명)
+
+```python
+products = ['A', 'B', 'C', 'D']
+
+numpy.random.seed(5)
+grades = 3 + 10 * numpy.random.rand(len(products))
+error = numpy.random.rand(len(products))
+
+pyplot.title('Horizon Bar')
+pyplot.__TODO__  # 에러 바의 전달인자를 error로 설정하고, 투명도를 0.4로 하는 수평 막대 그래프를 작성한다.
+pyplot.show()
+```
+
+![png](img/matplot-barh.png)
 ### Lab: 상점 고객수 데이터로 막대 그래프 그리기 
 
 다음 데이터는 2010년부터 2020년까지의 상점 고객수 데이터다. 이 데이터를 이용하여 선 그래프를 그리시오.
@@ -865,9 +907,9 @@ pyplot.show()
 
 누적 막대 그래프는 총계를 표시하고 각 범주 값이 어떻게 총계의 부분으로 나눠지는지 한 눈에 확인할 수 있어 편리하다.
 
-**bar()** 메소드로 여러 개의 바를 생성하여 누적 막대 그래프를 그릴 수 있다. 예를 들어, 두 개의 범주가 있을 때 **bar()** 메소드로 두 개의 막대를 생성하면 되는데 아래에 오는 값으로 먼저 막대를 생성한 후, 그 위에 오는 값으로 막대를 생성할 때 매개변수 ***bottom*** 의 전달인자로 아래에 오는 막대의 값을 지정하면 된다. 
+**bar** 메소드로 여러 개의 바를 생성하여 누적 막대 그래프를 그릴 수 있다. 예를 들어, 두 개의 범주가 있을 때 **bar** 메소드로 두 개의 막대를 생성하면 되는데 아래에 오는 값으로 먼저 막대를 생성한 후, 그 위에 오는 값으로 막대를 생성할 때 매개변수 ***bottom*** 의 전달인자로 아래에 오는 막대의 값을 지정하면 된다. 
 
-막대 그래프 위에 오차 막대(error bar)를 표시해주고 싶으면 매개변수 ***yerr*** 에 값을 전달인자로 지정하면 된다. 오차 막대의 너비는 매개변수 ***capsize*** 로 설정하면 된다. 마지막으로 **legend()** 메소드를 사용하여 각 값이 의미하는 바를 범례로 표시한다.
+막대 그래프 위에 오차 막대(error bar)를 표시해주고 싶으면 매개변수 ***yerr*** 에 값을 전달인자로 지정하면 된다. 오차 막대의 너비는 매개변수 ***capsize*** 로 설정하면 된다. 마지막으로 **legend** 메소드를 사용하여 각 값이 의미하는 바를 범례로 표시한다.
 
 학생들의 퀴즈 점수 평균과 표준편차를 성별과 반으로 나누어 누적 막대 그래프로 작성한다. 
 
@@ -964,7 +1006,7 @@ pyplot.show()
 
 원 그래프는 전체에 대한 각 부분의 비율을 부채꼴 모양으로 나타낸 그래프이며, 각 부분의 비율을 한 눈에 볼 수 있다는 장점이 있다.
 
-원 그래프를 작성하려면 **pie()** 메소드를 주로 **pie(*x, explode, labels=None, autopct=None, shadow=False, startangle=None*)** 형식으로 사용하면 된다.
+원 그래프를 작성하려면 **pie** 메소드를 주로 **pie(*x, explode, labels=None, autopct=None, shadow=False, startangle=None*)** 형식으로 사용하면 된다.
 - ***x*** 는 부채꼴(wedge) 크기,  
 - ***explode*** 는 원 그래프에서 특정 부채꼴만 떼어내어 강조할 때,  
 - ***labels*** 는 각 부채꼴의 라벨,  
@@ -976,7 +1018,7 @@ pyplot.show()
 
 참고로 부채꼴이 그려지는 순서는 **시계 역방향**이다. 
 
-그리고 **axis('equal')**로 로 설정하면 Equal aspect ratio를 사용하여 그려지는 도표의 x축과 y축의 길이 비율이 같도록 설정할 수 있다. 
+그리고 **axis('equal')** 로 설정하면 Equal aspect ratio를 사용하여 그려지는 도표의 x축과 y축의 길이 비율이 같도록 설정할 수 있다. 
 
 즉, 원 그래프의 데이터나 설정 등에 따라 그려지는 파이가 원이 아닌 타원의 형태로 그려질 수 있는데 x축과 y축의 길이 비율이 같게 하여 원형으로 그려지도록 한다. 
 
@@ -1022,7 +1064,7 @@ pyplot.show()
 
 즉, 특정 구간에 속하는 자료의 개수를 나타내는 빈도표(frequency table)인 도수분포표를 시각화한 도형으로 비교할 양이나 수치에 대한 구간별 빈도수를 막대 모양의 도형으로 나타낸 그래프다.
 
-히스토그램을 작성하려면 **hist()** 메소드를 주로 **hist(*x, bins=None, density=None, weights=None, cumulative=False, histtype='bar', orientation='vertical', rwidth=None, color=None, **kwargs*)** 형식으로 사용하면 된다.
+히스토그램을 작성하려면 **hist** 메소드를 주로 __hist(_x, bins=None, density=None, weights=None, cumulative=False, histtype='bar', orientation='vertical', rwidth=None, color=None, **kwargs_)__ 형식으로 사용하면 된다.
 - ***x*** 는 입력되는 데이터 값,  
 - ***bins*** 는 구간 수, 즉 도형에 들어갈 막대 개수,  
 - ***density*** 는 확률 밀도를 설정하기 위한 가중치 데이터 정규화,  
@@ -1176,7 +1218,7 @@ pyplot.show()
 
 박스 그래프는 데이터의 분포를 시각적으로 표현한 박스 모양의 그래프다. 데이터의 범위, 중앙값과 이상치를 빠르게 확인할 수 있는 장점이 있다.
 
-박스 그래프를 작성하려면 **boxplot()** 메소드를 주로 **boxplot(*x, notch=None, sym=None, vert=None, labels=None*)** 형식으로 사용하면 된다.
+박스 그래프를 작성하려면 **boxplot** 메소드를 주로 **boxplot(*x, notch=None, sym=None, vert=None, labels=None*)** 형식으로 사용하면 된다.
 - ***x*** 는 입력되는 데이터 값이다.  
 - ***notch*** 는 ***bool*** 자료형을 입력받으며 **True**면 잘록한 박스 그래프(notched box plot)를 그려 중앙값의 신뢰 구간을 표현한다. 
 - ***sym*** 는 문자열을 입력받아 박스 그래프에서 이상치들을 어떤 모양으로 표시할지 설정한다. 
@@ -1305,7 +1347,7 @@ pyplot.show()
 
 산점도는 두 변수간의 관계를 좌표평면 상에 점으로 나타내는 그래프이다.
 
-산점도를 작성하려면 **scatter()** 메소드를 주로 **scatter(*x, y, s=None, c=None, marker=None, alpha=None*)** 형식으로 사용하면 된다.
+산점도를 작성하려면 **scatter** 메소드를 주로 **scatter(*x, y, s=None, c=None, marker=None, alpha=None*)** 형식으로 사용하면 된다.
 - ***x*** 와 ***y*** 는 입력되는 데이터 값이다.  
 - ***s*** 는 마커의 크기를 설정한다.   
 - ***c*** 는 마커의 색상을 설정한다.  
@@ -1348,6 +1390,67 @@ pyplot.show()
 **실행 결과**  
 
 ![matplot35](img/matplot35.png)
+
+## 등고선 그래프
+등고선은 지표의 높낮이를 나타내는 곡선을 뜻한다. 등고선 그래프를 작성하려면 **contour** 나 **contourf** 메소드를 사용한다.
+
+- 입력 변수가 ***x***, ***y*** 두 개이고, 출력 변수가 ***z*** 하나면 **3**차원 자료가 된다.
+- **3**차원 자료를 시각화하는 방법은 명암이 아닌 등고선(contour)을 사용하는 방법이다.
+- **contour**는 등고선만 표시하고 **contourf**는 색깔로 표시한다.
+- 입력 변수 ***x***, ***y***는 그대로 사용할 수 없고 **meshgrid** 메소드로 그리드 포인트 행렬을 만들어야 한다.
+- 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
+  + https://matplotlib.org/stable/api/contour_api.html?highlight=contour#module-matplotlib.contour
+  + https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html?highlight=contourf#matplotlib.pyplot.contourf
+
+**contour**와 **contourf**를 사용하여 등고선 그래프를 작성한다. **contourf**의 투명도를 **0.75**로 매개변수 ***cmap***의 전달인자를 'jet'로 한다. **contour**의 컬러는 'black'으로 설정한다.
+
+```python
+def f(x, y):
+    return (1 - x / 2 + x ** 5 + y ** 3) * numpy.exp(-x ** 2 - y ** 2)
+
+N = 256
+x = numpy.linspace(-3, 3, N)
+y = numpy.linspace(-3, 3, N)
+X, Y = numpy.meshgrid(x, y)
+Z = f(X, Y)
+
+pyplot.title('Contour')
+pyplot.contourf(__TODO__)
+pyplot.contour(__TODO__)
+
+pyplot.show()
+```
+
+![matplot35](img/matplot-contour.png)
+
+## 3D 표면도
+3D 표면도(surface plot)는 등고선 그래프와 달리 **Axes3D**라는 **3**차원 전공 **axes**를 생성하여 입체적으로 표시한다.
+- **plot_wireframe** 나 **plot_surface** 메소드를 사용한다.
+- 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
+  + https://matplotlib.org/stable/tutorials/toolkits/mplot3d.html?highlight=plot_wireframe#mpl_toolkits.mplot3d.Axes3D.plot_wireframe
+  + https://matplotlib.org/stable/tutorials/toolkits/mplot3d.html?highlight=plot_surface#mpl_toolkits.mplot3d.Axes3D.plot_surface
+
+**plot_surface**를 사용하여 3D 표면도를 작성한다. 매개변수 ***rstride***와 ***cstride***의 전달인자를 각각 **1**로, ***cmap***의 전달인자를 'jet'로 설정한다.
+
+```python
+from mpl_toolkits.mplot3d import Axes3D
+
+x = numpy.arange(-4, 4, 0.25)
+y = numpy.arange(-4, 4, 0.25)
+X, Y = numpy.meshgrid(x, y)
+R = numpy.sqrt(X ** 2 + Y ** 2)
+Z = numpy.sin(R)
+
+fig = pyplot.figure()
+ax = Axes3D(fig, auto_add_to_figure=False)
+fig.add_axes(ax)
+ax.set_title('3D Surface Plot')
+
+ax.plot_surface(__TODO__)
+pyplot.show()
+```
+
+![matplot35](img/matplot-surface-plot.png)
 
 # Lab: 아파트 내 외국인 국적 및 연령 데이터 시각화
 
