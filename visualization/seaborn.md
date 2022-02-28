@@ -12,6 +12,8 @@ Seoul National University
 
 - - -
 
+<div align='right'><font size='-1'>[partial credit: 김도훈]</font></div>
+
 <h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#seaborn" data-toc-modified-id="seaborn-1">seaborn</a></span></li><li><span><a href="#seaborn-설치-및-불러오기" data-toc-modified-id="seaborn-설치-및-불러오기-2">seaborn 설치 및 불러오기</a></span></li><li><span><a href="#전처리" data-toc-modified-id="전처리-3">전처리</a></span><ul class="toc-item"><li><span><a href="#샘플-데이터-불러오기" data-toc-modified-id="샘플-데이터-불러오기-3.1">샘플 데이터 불러오기</a></span></li><li><span><a href="#불러온-데이터-열람하기" data-toc-modified-id="불러온-데이터-열람하기-3.2">불러온 데이터 열람하기</a></span></li></ul></li><li><span><a href="#막대-그래프" data-toc-modified-id="막대-그래프-4">막대 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-막대-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-막대-그래프-그리기-4.1">Lab: 타이타닉 데이터로 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#카운트-플롯" data-toc-modified-id="카운트-플롯-5">카운트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)-5.1">Lab: 타이타닉 데이터로 카운트 플롯 그리기(simple version)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기-5.2">Lab: 타이타닉 데이터로 카운트 플롯 그리기</a></span></li></ul></li><li><span><a href="#러그-플롯" data-toc-modified-id="러그-플롯-6">러그 플롯</a></span></li><li><span><a href="#커널-밀도-플롯" data-toc-modified-id="커널-밀도-플롯-7">커널 밀도 플롯</a></span></li><li><span><a href="#히스토그램" data-toc-modified-id="히스토그램-8">히스토그램</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기-8.1">Lab: 타이타닉 데이터로 러그 플롯, 커널 밀도 플롯, 히스토그램 그리기</a></span></li></ul></li><li><span><a href="#박스-그래프" data-toc-modified-id="박스-그래프-9">박스 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-박스-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-박스-그래프-그리기-9.1">Lab: 타이타닉 데이터로 박스 그래프 그리기</a></span></li></ul></li><li><span><a href="#바이올린-플롯" data-toc-modified-id="바이올린-플롯-10">바이올린 플롯</a></span></li><li><span><a href="#스트립-플롯" data-toc-modified-id="스트립-플롯-11">스트립 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-스트립-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-스트립-플롯-그리기-11.1">Lab: 타이타닉 데이터로 스트립 플롯 그리기</a></span></li></ul></li><li><span><a href="#스웜-플롯" data-toc-modified-id="스웜-플롯-12">스웜 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기-12.1">Lab: 타이타닉 데이터로 바이올린 플롯과 스웜 플롯 겹쳐 그리기</a></span></li></ul></li><li><span><a href="#산점도" data-toc-modified-id="산점도-13">산점도</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-산점도-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-산점도-그리기-13.1">Lab: 타이타닉 데이터로 산점도 그리기</a></span></li></ul></li><li><span><a href="#히트맵" data-toc-modified-id="히트맵-14">히트맵</a></span><ul class="toc-item"><li><span><a href="#피벗-테이블" data-toc-modified-id="피벗-테이블-14.1">피벗 테이블</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-히트맵-만들기" data-toc-modified-id="Lab:-타이타닉-데이터로-히트맵-만들기-14.2">Lab: 타이타닉 데이터로 히트맵 만들기</a></span></li></ul></li><li><span><a href="#조인트-플롯" data-toc-modified-id="조인트-플롯-15">조인트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-조인트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-조인트-플롯-그리기-15.1">Lab: 타이타닉 데이터로 조인트 플롯 그리기</a></span></li></ul></li><li><span><a href="#캣-플롯" data-toc-modified-id="캣-플롯-16">캣 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)-16.1">Lab: 타이타닉 데이터로 캣 플롯 그리기(가로 모양의 바이올린)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)-16.2">Lab: 타이타닉 데이터로 캣 플롯 그리기 (세로 모양의 바이올린)</a></span></li></ul></li><li><span><a href="#페어-플롯" data-toc-modified-id="페어-플롯-17">페어 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-다이아몬드-데이터로-페어-플롯-그리기" data-toc-modified-id="Lab:-다이아몬드-데이터로-페어-플롯-그리기-17.1">Lab: 다이아몬드 데이터로 페어 플롯 그리기</a></span><ul class="toc-item"><li><span><a href="#다이아몬드-데이터-불러오기" data-toc-modified-id="다이아몬드-데이터-불러오기-17.1.1">다이아몬드 데이터 불러오기</a></span></li><li><span><a href="#다이아몬드-데이터에-대한-설명" data-toc-modified-id="다이아몬드-데이터에-대한-설명-17.1.2">다이아몬드 데이터에 대한 설명</a></span></li></ul></li></ul></li><li><span><a href="#조인트-플롯-vs.-캣-플롯-vs.--페어-플롯" data-toc-modified-id="조인트-플롯-vs.-캣-플롯-vs.--페어-플롯-18">조인트 플롯 vs. 캣 플롯 vs.  페어 플롯</a></span></li><li><span><a href="#스타일" data-toc-modified-id="스타일-19">스타일</a></span></li></ul></div>
 
@@ -86,11 +88,11 @@ import platform
 # 기본적인 한글 폰트가 설치 되었다고 가정하고 운영 시스템에 따라 기본 한글 폰트를 설정한다.
 import platform
 if platform.system() == 'Windows':  # 윈도우면
-  rc('font', family='Malgun Gothic')
+    rc('font', family='Malgun Gothic')
 elif platform.system() == 'Darwin':  # macOS면
-  rc('font', family='AppleGothic')
+    rc('font', family='AppleGothic')
 else:
-  print('ERROR: 시스템 운영체제를 확인할 수 없어 한글 폰트 설정에 실패하였습니다.') 
+    print('ERROR: 시스템 운영체제를 확인할 수 없어 한글 폰트 설정에 실패하였습니다.') 
 ```
 
 # 전처리
@@ -100,7 +102,7 @@ else:
 seaborn에서 제공하는 샘플 데이터 세트를 불러올 수 있다. 인터넷에 연결하여 아래 온라인 Repository에서 데이터 세트를 불러온다. 
 - https://github.com/mwaskom/seaborn-data
 
-seaborn.**get_dataset_names()** 로 사용할 수 있는 데이터 세트의 이름을 확인할 수 있다.
+seaborn.**get_dataset_names** 으로 사용할 수 있는 데이터 세트의 이름을 확인할 수 있다.
 
 
 ```python
@@ -130,7 +132,7 @@ seaborn.get_dataset_names()
 
 
 
-seaborn.get_dataset_names()를 실행할 때 만약 경고 메시지가 나오면 **seaborn**의 **utils.py**파일의 수정하면 이 문제를 해결할 수 있다. 
+seaborn.get_dataset_names를 실행할 때 만약 경고 메시지가 나오면 **seaborn**의 **utils.py**파일의 수정하면 이 문제를 해결할 수 있다. 
 
 경고 메시지를 읽어보면 어디서 문제가 발생하는지, 그리고 어떻게 하면 문제를 해결할 수 있는지 그 해결법을 알려준다. 만약 HTML 파서(parser)를 설정해야 한다면 **seaborn**의 **utils.py** 파일을 수정하면 이 문제를 해결할 수 있다. 해당 파일을 열고 경고 메시지를 발생시키는 특정 라인을 수정하면 된다.
 
@@ -152,7 +154,7 @@ The code that caused this warning is on line 376 of the file /Users/.../python/v
 # warnings.simplefilter(action='ignore')
 ```
 
-데이터 세트를 불러오려면 **load_dataset()** 메소드를 __load_dataset(_name, cache=True, data_home=None, **kws_)__ 형식으로 사용한다.
+데이터 세트를 불러오려면 **load_dataset** 메소드를 __load_dataset(_name, cache=True, data_home=None, **kws_)__ 형식으로 사용한다.
 - ***name*** 은 데이터 세트의 이름이다. 
 - ***cache*** 는 **bool** 자료형으로 **True**면 데이터 세트를 로컬(local) 드라이브로 저장하여 사용한다.
 - ***data_home*** 은 문자열을 입력받는데 데이터 세트를 로컬 드라이브에 저장되는 경로를 뜻한다. 기본값은 **~/seaborn-data/** 다.
@@ -184,7 +186,7 @@ titanic = seaborn.load_dataset('titanic', data_home='data')  # 타이타닉 생�
 뿐만 아니라 데이터를 다루는 라이브러리인 판다스의 데이터프레임 기능을 제공하기 때문에 불러온 데이터의 열람 및 확인이 가능하다.
 
 **데이터를 부분 열람하기**  
-데이터의 처음 *n*개의 행을 확인하려면 **head()** 메소드를 **head**(*n*) 형식으로 사용하면 된다.
+데이터의 처음 *n*개의 행을 확인하려면 **head** 메소드를 **head**(*n*) 형식으로 사용하면 된다.
 - ***n*** 은 정수며 처음 *n* 개의 행을 출력해준다. 
 - 음의 정수가 입력되면 마지막 *n* 개의 행을 제외한 나머지 행을 출력한다. 
 - 기본값은 **5**로 처음 **5**개의 행을 출력한다.   
@@ -334,7 +336,7 @@ print(titanic)
 
 **seaborn**에서 막대 그래프는 수치형 값의 특정 집계(평균, 합계 등)를 동일한 너비의 여러 막대로 표시하고 각 막대 위에 오차 막대를 그려주는 그래프다.
 
-막대 그래프를 작성하려면 **barplot()** 메소드를 주로 **barplot(*x=None, y=None, hue=None, data=None, order=None, estimator=<function mean at 0x10a2a03b0>, ci=95*)** 형식으로 사용하면 된다.
+막대 그래프를 작성하려면 **barplot** 메소드를 주로 **barplot(*x=None, y=None, hue=None, data=None, order=None, estimator=<function mean at 0x10a2a03b0>, ci=95*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다.
 - ***hue*** 에도 데이터의 변수명을 입력하며 생성된 막대들을 입력한 변수의 범주에 따라 색으로 나눠준다.
@@ -348,9 +350,9 @@ print(titanic)
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.barplot.html
 
-**barplot()** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**barplot** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
-범주별로 생성되는 막대들의 눈금에 라벨을 붙이려면 **barplot()** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수로 할당하고 **set_xticklabels()** 을 사용한다.
+범주별로 생성되는 막대들의 눈금에 라벨을 붙이려면 **barplot** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수로 할당하고 **set_xticklabels** 을 사용한다.
 
 [seaborn.barplot](https://seaborn.pydata.org/generated/seaborn.barplot.html)
 - Show point estimates and confidence intervals as rectangular bars.
@@ -493,7 +495,7 @@ pyplot.show()
 
 카운트 플롯은 각 범주별로 데이터가 얼마나 있는지 나타낼 수 있다.
 
-카운트 플롯을 작성하려면 **countplot()** 메소드를 주로 **countplot(*x=None, y=None, hue=None, data=None, color=None, palette=None*)** 형식으로 사용하면 된다.
+카운트 플롯을 작성하려면 **countplot** 메소드를 주로 **countplot(*x=None, y=None, hue=None, data=None, color=None, palette=None*)** 형식으로 사용하면 된다.
 
 - ***x***, ***y***, ***hue*** 는 데이터의 열 이름(변수명) 문자열이다. 
     + ***x*** 와 ***y*** 는 동시에 입력할 수 없다. 
@@ -509,7 +511,7 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.countplot.html
 
-**countplot()** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**countplot** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
 [seaborn.countplot](https://seaborn.pydata.org/generated/seaborn.countplot.html)
 - Show the counts of observations in each categorical bin using bars.
@@ -606,14 +608,14 @@ survived 값 중
 
 러그 플롯은 데이터 위치를 x축 위에 작은 막대로 나타내어 실제 데이터들의 분포를 시각화한다.
 
-러그 플롯을 작성하려면 **rugplot()** 메소드를 주로 **rugplot(*a, height=0.05, axis='x'*)** 형식으로  사용하면 된다.
+러그 플롯을 작성하려면 **rugplot** 메소드를 주로 **rugplot(*a, height=0.05, axis='x'*)** 형식으로  사용하면 된다.
 - ***a*** 는 입력하는 데이터 값이다. 1차원 배열(1D Arrary) 형태를 가진다.
 - ***height*** 는 막대의 길이를, 
 - ***axis*** 는 러그 플롯을 그리는 축을 설정한다. **'x'** 와 **'y'** 중 하나를 받으며 기본값은 **'x'** 로 *x*축에 러그 플롯을 그린다.
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - http://seaborn.pydata.org/generated/seaborn.rugplot.html
 
-**rugplot()** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**rugplot** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot. ylabel** 메소드를 호출하면 된다.
 
 [seaborn.rugplot](http://seaborn.pydata.org/generated/seaborn.rugplot.html)
 - Plot datapoints in an array as sticks on an axis.
@@ -697,7 +699,7 @@ pyplot.show()
 커널 함수란 확률 분포를 나타내기에 적합한 함수로서 원점을 중심으로 대칭이고, 적분이 **1**인 양의 함수를 뜻한다. 
 - 커널 함수에는 가우시안(Gaussian), 코사인(Cosine), Epanechnikov, uniform 등이 있는데, **seaborn**에서는 기본값으로 가우시안 커널 함수를 사용한다.
 
-커널 밀도 플롯을 작성하려면 **kdeplot()** 메소드를 주로 **kdeplot(*data, data2=None, shade=False, vertical=False, kernel='gau'*)** 형식으로 사용하면 된다.
+커널 밀도 플롯을 작성하려면 **kdeplot** 메소드를 주로 **kdeplot(*data, data2=None, shade=False, vertical=False, kernel='gau'*)** 형식으로 사용하면 된다.
 - ***data*** 는 입력하는 데이터 값이다. 1차원 배열(1D Arrary) 형태를 가진다.
 - ***data2*** 도 입력하는 데이터 값이다. 1차원 배열(1D Arrary) 형태를 가지는데 두 개 변수를 가지는 커널 밀도 플롯을 그릴 때 설정한다.
 - ***shade*** 는 **bool** 자료형을 입력하여 곡선 아래의 공간을 음영 처리할지 설정하며, 기본값은 **False**로 음영 처리를 하지 않는다.
@@ -706,7 +708,7 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.kdeplot.html
 
-**kdeplot()** 메소드로 출력하는 도표는 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**distplot** 메소드는 히스토그램 뿐만 아니라 커널 밀도 플롯과 러그 플롯 등을 같이 그릴 수 있으나 출력하는 그림은 결국 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
 [seaborn.kdeplot](https://seaborn.pydata.org/generated/seaborn.kdeplot.html)
 - Fit and plot a univariate or bivariate kernel density estimate.
@@ -763,7 +765,7 @@ pyplot.show()
 
 히스토그램은 도수분포표를 시각적으로 표현한 막대 그래프다. 즉, 특정 구간에 속하는 자료의 개수를 나타내는 빈도표(frequency table)인 도수분포표를 시각화한 도형으로 비교할 양이나 수치에 대한 구간별 빈도수를 막대 모양의 도형으로 나타낸 그래프다.
 
-히스토그램을 작성하려면 **distplot()** 메소드를 주로 **distplot(*a, bins=None, hist=True, kde=True, rug=False, norm_hist=False*)** 형식으로 사용하면 된다.
+히스토그램을 작성하려면 **distplot** 메소드를 주로 **distplot(*a, bins=None, hist=True, kde=True, rug=False, norm_hist=False*)** 형식으로 사용하면 된다.
 - ***a*** 는 입력하는 데이터 값이다. 1차원 배열(1D Array), 리스트(list), 또는 시리즈(series)형태를 가진다.
 - ***bins*** 는 구간 수, 즉 도형에 들어갈 막대의 개수다. 설정하지 않으면 유용한 결과를 가지도록 자동으로 설정된다.
 - ***hist*** 에는 **bool** 자료형을 입력하여 히스토그램을 그릴지 설정한다. 기본값은 **True**로 히스토그램을 그린다.
@@ -773,7 +775,7 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.distplot.html
 
-**distplot()** 메소드는 히스토그램 뿐만 아니라 커널 밀도 플롯과 러그 플롯 등을 같이 그릴 수 있으나 출력하는 그림은 결국 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**distplot** 메소드는 히스토그램 뿐만 아니라 커널 밀도 플롯과 러그 플롯 등을 같이 그릴 수 있으나 출력하는 그림은 결국 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
 
 [seaborn.distplot](https://seaborn.pydata.org/generated/seaborn.distplot.html)
@@ -858,7 +860,7 @@ pyplot.show()
 - 중앙값의 좌우로부터 동일한 백분율을 가진 두 점간의 거리를 계산하기 위해서 제 **3** 사분위수에서 제 **1** 사분위수를 빼서 사분위수 범위 **IQR**(interquartile range)를 계산한다. **Q1 - 1.5 * IQR** 보다 작거나 **Q3 + 1.5 * IQR** 보다 큰 값은 이상치이다.
 - 박스 그래프 바깥의 선은 이상치를 제외한 최댓값과 최솟값을 의미한다.
 
-박스 그래프를 작성하려면 **boxplot()** 메소드를 주로 **boxplot(*x=None, y=None, hue=None, data=None, order=None, orient=None, fliersize=5*)** 형식으로 사용하면 된다.
+박스 그래프를 작성하려면 **boxplot** 메소드를 주로 **boxplot(*x=None, y=None, hue=None, data=None, order=None, orient=None, fliersize=5*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다. ***x*** 와 ***y*** 중 수치형 데이터 값이 적어도 하나는 들어가야 박스 그래프가 생성된다. 범주형 데이터 값을 가지는 변수명과 수치형 데이터 값을 가지는 변수명을 사용하면 범주별로 박스 그래프가 생성된다.
 - ***hue*** 에는 데이터의 변수명이 입력하며 생성한 박스들은 입력한 변수의 범주에 따라 색으로 나눠준다. 
@@ -869,9 +871,9 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.boxplot.html
 
-**boxplot()** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**boxplot** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot. ylabel** 메소드를 호출하면 된다.
 
-범주별로 생성하는 박스들의 눈금에 라벨을 붙이려면 **boxplot()** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수에 할당하고 **set_xticklabels()** 을 사용한다.
+범주별로 생성하는 박스들의 눈금에 라벨을 붙이려면 **boxplot** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수에 할당하고 **set_xticklabels** 을 사용한다.
 
 [seaborn.boxplot](https://seaborn.pydata.org/generated/seaborn.boxplot.html)
 - Draw a box plot to show distributions with respect to categories.
@@ -974,7 +976,7 @@ pyplot.show()
 
 바이올린 플롯은 **박스 그래프**를 그리고 그 위에 **커널 밀도 플롯**을 좌우 대칭으로 그려 데이터의 분포를 표현하는 그래프이다.
 
-바이올린 플롯을 작성하려면 **violinplot()** 메소드를 주로 **violinplot(*x=None, y=None, hue=None, data=None, order=None, scale='area', inner='box', split=False, orient=None*)** 형식으로 사용하면 된다.
+바이올린 플롯을 작성하려면 **violinplot** 메소드를 주로 **violinplot(*x=None, y=None, hue=None, data=None, order=None, scale='area', inner='box', split=False, orient=None*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다. ***x*** 와 ***y*** 중 수치형 데이터 값이 적어도 하나는 들어가야 바이올린 플롯이 생성된다. 범주형 데이터 값을 가지는 변수명과 수치형 데이터 값을 가지는 변수명을 사용하면 범주별로 바이올린 플롯이 생성된다.
 - ***hue*** 에는 데이터의 변수명을 입력하며 생성한 바이올린 도형들을 입력한 변수의 범주에 따라 색으로 나눠준다.
@@ -991,9 +993,9 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.violinplot.html
 
-**violin()** 메소드는 박스 그래프와 커널 밀도 플롯을 같이 그릴 수 있으나 출력하는 그림은 결국 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**violin** 메소드는 박스 그래프와 커널 밀도 플롯을 같이 그릴 수 있으나 출력하는 그림은 결국 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
-범주별로 생성되는 바이올린 도형들의 눈금에 라벨을 붙이려면 **violinplot()** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수에 할당하고 **set_xticklabels()** 을 사용한다.
+범주별로 생성되는 바이올린 도형들의 눈금에 라벨을 붙이려면 **violinplot** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수에 할당하고 **set_xticklabels** 을 사용한다.
 
 **[참고]** 커널 밀도로 도표를 그릴 경우 데이터가 음수가 아니더라도 **0**에 가까운 데이터가 많다면 커널 밀도는 음수에 그려질 수 있다. 만약 커널 밀도 함수 값에서 음수를 보고 싶지 않으면 매개변수 중 ***cut*** 을 **0**으로 설정(**cut=0**)하면 **0** 이상의 값들만 확인할 수 있다.
 
@@ -1127,7 +1129,7 @@ pyplot.show()
 
 스트립 플롯은 입력되는 변수 하나가 범주형인 **산점도**를 그린다. 따라서 각 점은 데이터 한 개를 뜻한다.
 
-스트립 플롯을 작성하려면 **stripplot()** 메소드를 주로 **stripplot(*x=None, y=None, hue=None, data=None, order=None, jitter=True, color=None, size=5*)** 형식으로 사용하면 된다.
+스트립 플롯을 작성하려면 **stripplot** 메소드를 주로 **stripplot(*x=None, y=None, hue=None, data=None, order=None, jitter=True, color=None, size=5*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다. ***x*** 와 ***y*** 에는 범주형 변수와 수치형 변수를 각각 하나씩 입력해야 한다. 두 개의 수치형 변수를 입력할 수는 있지만 그럴 경우 ***x*** 에 입력하는 수치형 데이터 값을 각각 하나의 범주로 간주하여 그린다. 즉, 이 경우 스트립 플롯보다는 산점도를 사용하는게 적합하다.
 - ***hue*** 에는 데이터의 변수명을 입력하며 생성한 범주별 산점도를 입력한 변수의 범주에 따라 다른 색으로 표현한다.
@@ -1140,9 +1142,9 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.stripplot.html
 
-**stripplot()** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**stripplot** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
-범주별로 생성되는 산점도들의 눈금에 라벨을 붙이려면 **stripplot()** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수로 할당하고 **set_xticklabels()** 을 사용한다.
+범주별로 생성되는 산점도들의 눈금에 라벨을 붙이려면 **stripplot** 메소드가 반환하는 객체인 **AxesSubplot**을 새로운 변수로 할당하고 **set_xticklabels** 을 사용한다.
 
 [seaborn.stripplot](https://seaborn.pydata.org/generated/seaborn.stripplot.html)
 - Draw a scatterplot where one variable is categorical.
@@ -1283,7 +1285,7 @@ pyplot.show()
 
 스웜 플롯은 각 범주에 속하는 수치형 데이터를 최대한 겹치지 않도록 퍼뜨려 점 형태로 나타낸다. **점을 겹치지 않게 그린 스트립 플롯**이라고 할 수 있으며 데이터의 분포 정도를 잘 보여준다.
 
-스웜 플롯을 작성하려면 **swarmplot()** 메소드를 주로 **swarmplot(*x=None, y=None, hue=None, data=None, order=None, color=None, size=5*)** 형식으로 사용하면 된다.
+스웜 플롯을 작성하려면 **swarmplot** 메소드를 주로 **swarmplot(*x=None, y=None, hue=None, data=None, order=None, color=None, size=5*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다. ***x*** 와 ***y*** 에는 범주형 변수와 수치형 변수를 각각 하나씩 입력해야 한다. 두 개의 수치형 변수를 입력할 수는 있지만 그럴 경우 ***x*** 에 입력하는 수치형 데이터 값을 각각 하나의 범주로 간주하여 그린다. 즉, 이 경우 스웜 플롯보다는 산점도를 사용하는게 적합하다.
 - ***hue*** 에는 데이터의 변수명을 입력하며 생성한 범주별 산점도를 입력한 변수의 범주에 따라 색으로 나눠준다.
@@ -1295,9 +1297,9 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.swarmplot.html
 
-**swarmplot()** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+**swarmplot** 메소드로 출력하는 그림은 하나이므로 x축과 y축을 라벨링할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 
-범주별로 생성되는 산점도들의 눈금에 라벨을 붙이려면 **swarmplot()** 메소드가 반환하는 객체인 **AxesSubplot** 을 새로운 변수에 할당하고 **set_xticklabels()** 을 사용한다.
+범주별로 생성되는 산점도들의 눈금에 라벨을 붙이려면 **swarmplot** 메소드가 반환하는 객체인 **AxesSubplot** 을 새로운 변수에 할당하고 **set_xticklabels** 을 사용한다.
 
 
 [seaborn.swarmplot](https://seaborn.pydata.org/generated/seaborn.swarmplot.html)
@@ -1463,7 +1465,7 @@ pyplot.show()
 
 산점도는 두 변수 간의 관계를 좌표평면 상에 점으로 나타내는 도표다.
 
-산점도를 작성하려면 **scatterplot()** 메소드를 주로 **scatterplot(*x=None, y=None, hue=None, style=None, size=None, data=None, palette=None*)** 형식으로 사용하면 된다.
+산점도를 작성하려면 **scatterplot** 메소드를 주로 **scatterplot(*x=None, y=None, hue=None, style=None, size=None, data=None, palette=None*)** 형식으로 사용하면 된다.
 
 - ***x*** 는 x축에 그려지는 데이터 또는 데이터의 열 이름(변수명)으로 문자열이다.
 - ***y*** 는 y축에 그려지는 데이터 또는 데이터의 열 이름(변수명)으로 문자열이다.
@@ -1472,7 +1474,7 @@ pyplot.show()
 - ***size*** 는 데이터의 열 이름을 입력받아 크기가 다른 점들을 생성한다. 만약 범주형을 입력하면 범주에 따라 크기를 다르게 하고, 수치형을 입력하면 자동으로 일정한 수치에 따라 점의 크기를 다르게 표현한다.
 - ***data*** 는 입력되는 전체 데이터의 이름이다.
 - ***palette*** 는 **hue**로 칠해지는 색상들의 순서를 설정한다.
-- 양 축에 라벨링을 하려면 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+- 양 축에 라벨링을 하려면 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.scatterplot.html
 
@@ -1529,14 +1531,14 @@ pyplot.show()
 
 히트맵은 2차원 데이터를 색으로 표시한다.
 
-히트맵을 작성하려면 **heatmap()** 메소드를 주로 **heatmap(*data, cmap=None, annot=None, fmt='.2g', annot_kws=None, linewidths=0*)** 형식으로 사용하면 된다.
+히트맵을 작성하려면 **heatmap** 메소드를 주로 **heatmap(*data, cmap=None, annot=None, fmt='.2g', annot_kws=None, linewidths=0*)** 형식으로 사용하면 된다.
 - ***data*** 는 다차원 배열(ndarray)으로 변환할 수 있는 2차원 데이터 세트나 데이터프레임이다.
 - ***cmap*** 으로 히트맵의 색상을 설정한다.
 - ***annot*** 은 **bool** 자료형을 입력하여 히트맵의 각 셀 안에 데이터 값을 표시할지 여부를 정한다.
 - ***fmt*** 는 각 셀 안에 표시하는 값의 포맷을 설정한다. 문자열로 입력하고 예를 들어 '.2f'를 입력하면 소수점 두 번째 자리까지 표시한다.
 - ***annot_kws*** 는 ***annot***이 **True**일 때 각 셀 안에 표기하는 값의 글자의 크기와 위치 등을 설정할 수 있다.
 - ***linewidths*** 는 각 셀을 나누는 선의 너비를 설정한다.
-- 양 축에 라벨링을 하려면 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다.
+- 양 축에 라벨링을 하려면 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다.
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.heatmap.html
 
@@ -1686,7 +1688,7 @@ pyplot.show()
 
 피벗 테이블을 생성하기 위해서는 **pandas** 패키지를 사용한다. 판다스는 피벗 테이블을 만드는 **pivot_table()** 메소드를 제공하며, 매개변수 **index**와 **columns**를 사용하여 피벗 테이블의 행과 열을 설정한다. 
 
-피벗 테이블을 작성하려면 **pandas.pivot_table()** 메소드를 주로 **pivot_table(*data, values=None, index=None, columns=None, aggfunc='mean', margins=False, margins_name='All'*)** 형식으로 사용하면 된다.
+피벗 테이블을 작성하려면 **pandas.pivot_table** 메소드를 주로 **pivot_table(*data, values=None, index=None, columns=None, aggfunc='mean', margins=False, margins_name='All'*)** 형식으로 사용하면 된다.
 
 - ***data*** 는 피벗 테이블로 작성할 데이터프레임이다.
 - ***values*** 는 데이터프레임에서 ***aggfunc***을 사용하여 집계할(분석할) 열이다.
@@ -1784,7 +1786,7 @@ print(bill_pivot)
 
 조인트 플롯(joint plot)은 특정 그래프를 도표의 안쪽에 그리고 그래프의 가장자리에는 안에 그려진 그래프에 따라 히스토그램 또는 커널 밀도 플롯을 그려주는 도표다.
 
-조인트 플롯을 작성하려면 **jointplot()** 메소드를 주로 **jointplot(*x, y, data=None, kind='scatter', color=None, height=6, space=0.2*)** 형식으로 사용하면 된다.
+조인트 플롯을 작성하려면 **jointplot** 메소드를 주로 **jointplot(*x, y, data=None, kind='scatter', color=None, height=6, space=0.2*)** 형식으로 사용하면 된다.
 
 - ***x*** 는 x축에 그려지는 데이터 또는 데이터의 열 이름(변수명) 문자열이다.
 - ***y*** 는 y축에 그려지는 데이터 또는 데이터의 열 이름(변수명) 문자열이다.
@@ -1800,7 +1802,7 @@ print(bill_pivot)
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.jointplot.html
 
-하나의 그래프에 제목을 설정할 때는 **pyplot.title()** 을 이용한다. 하지만 조인트 플롯에 **pyplot.title()** 을 사용하면 제목의 위치가 내부 도표와 외부 도표 사이에 위치하게 된다. 조인트 플롯 전체에 대한 제목을 설정하려면 **pyplot.suptitle()** 을 호출해야 한다. 조인트 플롯에서 내부 도표와 외부 도표에 각각 제목을 짓는 것은 가능하지 않다. 비록 조인트 폴롯으로 두 개의 그래프를 그리지만 서브플롯(subplot)의 개념이 아니라 조인트 플롯 자체가 하나의 도표이기 때문이다.
+하나의 그래프에 제목을 설정할 때는 **pyplot.title** 메소드를 이용한다. 하지만 조인트 플롯에 **pyplot.title** 메소드를 사용하면 제목의 위치가 내부 도표와 외부 도표 사이에 위치하게 된다. 조인트 플롯 전체에 대한 제목을 설정하려면 **pyplot.suptitle** 메소드를 호출해야 한다. 조인트 플롯에서 내부 도표와 외부 도표에 각각 제목을 짓는 것은 가능하지 않다. 비록 조인트 폴롯으로 두 개의 그래프를 그리지만 서브플롯(subplot)의 개념이 아니라 조인트 플롯 자체가 하나의 도표이기 때문이다.
 
 조인트 플롯에서 각 축을 라벨링 하려면 **jointplot**이 반환하는 객체를 변수에 할당하고 해당 변수에 **set_axis_labels**(*xlabel='', ylabel=''*)로 값을 설정하여 각 축을 라벨링한다. 
 - **jointplot**이 반환하는 객체는 **JointGrid**다.
@@ -1876,7 +1878,7 @@ pyplot.show()
 
 ![seaborn27](img/seaborn27.png)
 
-**jointplot**이 반환하는 객체인 **Jointrid**의 **plot_joint()**로 세 개의 그래프도 그릴 수 있다. 아래 코드는 안에 산점도와 가장자리에 히스토그램을 그린 후 안에 커널 밀도 플롯을 추가한 코드다.
+**jointplot**이 반환하는 객체인 **Jointrid**의 **plot_joint** 메소드로 세 개의 그래프도 그릴 수 있다. 아래 코드는 안에 산점도와 가장자리에 히스토그램을 그린 후 안에 커널 밀도 플롯을 추가한 코드다.
 
 
 ```python
@@ -1931,7 +1933,7 @@ pyplot.show()
 
 캣 플롯은 범주형 변수와 수치형 변수간의 관계를 사용자가 원하는 그래프 중 하나를 선택하여 시각화한다. 이 때 매개 변수 ***row*** 와 ***col*** 에 범주형 변수를 입력하면 선택한 그래프를 범주에 따라 여러 개의 행이나 열로 그려준다. 즉, 캣 플롯은 범주형 변수와 수치형 변수간의 관계를 각 범주에 따라 한 가지 종류의 그래프로 여러 개를 그린다.
 
-캣 플롯을 작성하려면 **catplot()** 메소드를 주로 **catplot(*x=None, y=None, hue=None, data=None, row=None, col=None, kind='strip'*)** 형식으로 사용하면 된다.
+캣 플롯을 작성하려면 **catplot** 메소드를 주로 **catplot(*x=None, y=None, hue=None, data=None, row=None, col=None, kind='strip'*)** 형식으로 사용하면 된다.
 
 - ***x, y*** 에는 데이터의 변수명을 입력한다. ***x*** 와 ***y*** 에는 범주형 변수와 수치형 변수를 각각 하나씩 입력해야 한다. 두 개의 수치형 변수를 입력할 수는 있지만 그럴 경우 ***x***에 입력하는 수치형 데이터 값을 각각 하나의 범주로 간주하여 그린다.
 - ***hue*** 에는 데이터의 변수명을 입력하며 생성한 범주별 도표를 입력한 변수의 범주에 따라 다른 색으로 표현한다.
@@ -1943,14 +1945,14 @@ pyplot.show()
 
 캣 플롯에서는 행으로 표현하기 원하는 범주형 변수는 매개변수 ***row*** 에 설정하고, 열로 표현하기 원하는 범주형 변수는 매개변수 ***col*** 에 설정하면 된다.
 
-**catplot()** 메소드에서 **x**와 **y** 변수만 입력하여 하나의 그래프를 그리면 **pyplot.title**로 제목을 짓고 x축과 y축을 라벨링 할 때 **pyplot.xlabel()** 과 **pyplot.ylabel()** 을 호출하면 된다. 
+**catplot** 메소드에서 **x**와 **y** 변수만 입력하여 하나의 그래프를 그리면 **pyplot.title** 메소드로 제목을 짓고 x축과 y축을 라벨링 할 때 **pyplot.xlabel** 과 **pyplot.ylabel** 메소드를 호출하면 된다. 
 
 캣 플롯에서 각 축을 라벨링 하려면 **catplot**이 반환하는 객체를 변수에 할당하고 해당 변수에 **set_axis_labels**(*xlabel='', ylabel=''*)로 값을 설정하여 각 축을 라벨링한다. 
 - **catplot**이 반환하는 객체는 **FacetGrid**다.
 - **FacetGrid**는 변수 간의 관계를 범주에 따라 행과 열로 표현하는 그리드다.
     - **seaborn** 패키지에서는 FacetGrid를 '조건부 관계(conditional relationships)를 그리기 위한 다중 플롯 그리드'로 정의하고 있다.
   
-**catplot()** 메소드에서 매개변수 ***row*** 를 사용하여 캣 플롯이 ***row*** 의 범주에 따라 여러 개의 서브 플롯들로 그릴 수 있다. 그러므로 전체 도표에 대해 제목을 짓기 위해서는 **pyplot.suptitle()** 을 사용해야 한다. 여러 개의 서브 플롯이 그려지면 캣 플롯이 반환하는 객체를 변수에 할당하고 **axes** 속성을 이용하여 라벨링을 할 수 있다. 그려지는 서브 플롯의 순서에 따라 **axes[x, y].set_xlabel()**, **axes[x, y].set_ylabel()** 로 라벨링을 한다. 여기서 **[x, y]** 은 몇 번째 서브 플롯인지를 설정한다. ***x*** 가 행이 되고 ***y*** 가 열이 되는데 예를 들어 **[0, 3]** 이라면 첫 번째 행의 네번째 열을 의미한다.
+**catplot** 메소드에서 매개변수 ***row*** 를 사용하여 캣 플롯이 ***row*** 의 범주에 따라 여러 개의 서브 플롯들로 그릴 수 있다. 그러므로 전체 도표에 대해 제목을 짓기 위해서는 **pyplot.suptitle** 메소드를 사용해야 한다. 여러 개의 서브 플롯이 그려지면 캣 플롯이 반환하는 객체를 변수에 할당하고 **axes** 속성을 이용하여 라벨링을 할 수 있다. 그려지는 서브 플롯의 순서에 따라 **axes[x, y].set_xlabel**, **axes[x, y].set_ylabel** 메소드로 라벨링을 한다. 여기서 **[x, y]** 은 몇 번째 서브 플롯인지를 설정한다. ***x*** 가 행이 되고 ***y*** 가 열이 되는데 예를 들어 **[0, 3]** 이라면 첫 번째 행의 네번째 열을 의미한다.
 
 [seaborn.catplot](https://seaborn.pydata.org/generated/seaborn.catplot.html)
 - Figure-level interface for drawing categorical plots onto a FacetGrid.
@@ -2154,7 +2156,7 @@ pyplot.show()
 
 페어 플롯은 데이터 세트 내의 모든 변수간의 관계를 좌표평면 상에 점으로 나타내는 그래프이다. 모든 변수에 대해 산점도를 그린다고 보면 된다. 따라서 데이터 세트에 있는 변수 개수의 제곱만큼 서브 플롯을 생성한다. 
 
-페어 플롯을 작성하려면 **pairplot()** 메소드를 주로 **pairplot(*data, hue=None, palette=None, kind='scatter', markers=None*)** 형식으로 사용하면 된다.
+페어 플롯을 작성하려면 **pairplot** 메소드를 주로 **pairplot(*data, hue=None, palette=None, kind='scatter', markers=None*)** 형식으로 사용하면 된다.
 
 - ***data*** 는 행이 데이터의 관측값, 열이 변수인 전체 데이터 세트이다.
 - ***hue*** 는 전체 데이터 세트 중 하나의 변수명이며 **pairplot**의 막대나 마커를 범주별로 색상을 다르게 표현할 수 있다.
@@ -2165,7 +2167,7 @@ pyplot.show()
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.pairplot.html
 
-전체 페어 플롯에 대해 제목을 설정하려면 **pyplot.suptitle()** 을 사용해야한다. 그리고 페어 플롯은 여러 개의 서브 플롯을 그리기 때문에 페어 플롯이 반환하는 객체를 변수에 할당하고 **axes** 속성을 사용하여 각 축을 라벨링 할 수 있다. 그려지는 서브 플롯의 순서에 따라 **axes[*x, y*].set_xlabel()**, **axes[*x, y*].set_ylabel()** 메소드로 라벨링을 하면된다. 여기서 **[*x, y*]** 은 몇 번째 서브 플롯인지를 설정할 때 사용한다. ***x***가 행이고 ***y***가 열인데, 예를 들어 **[0, 3]** 이라면 첫 번째 행의 네번째 열을 의미한다.
+전체 페어 플롯에 대해 제목을 설정하려면 **pyplot.suptitle(* 메소드를 사용해야한다. 그리고 페어 플롯은 여러 개의 서브 플롯을 그리기 때문에 페어 플롯이 반환하는 객체를 변수에 할당하고 **axes** 속성을 사용하여 각 축을 라벨링 할 수 있다. 그려지는 서브 플롯의 순서에 따라 **axes[*x, y*].set_xlabel**, **axes[*x, y*].set_ylabel** 메소드로 라벨링을 하면된다. 여기서 **[*x, y*]** 은 몇 번째 서브 플롯인지를 설정할 때 사용한다. ***x***가 행이고 ***y***가 열인데, 예를 들어 **[0, 3]** 이라면 첫 번째 행의 네번째 열을 의미한다.
 
 [seaborn.pairplot](https://seaborn.pydata.org/generated/seaborn.pairplot.html)
 - Plot pairwise relationships in a dataset.
@@ -2334,14 +2336,14 @@ print(diamonds)
 
 라벨, 선의 크기, 배경 등 전반적인 플롯 스타일을 한번에 변경하는 것이 가능하다.
 
-플롯 스타일을 변경하려면 **set()** 메소드를 주로 **set(*context='notebook', style='darkgrid'*)** 형식으로 사용하면 된다.
+플롯 스타일을 변경하려면 **set** 메소드를 주로 **set(*context='notebook', style='darkgrid'*)** 형식으로 사용하면 된다.
 - ***context*** 에는 문자열 또는 딕셔너리 자료형을 입력하며 라벨이나 선의 크기에 변화를 준다. *{'paper' &#124; 'notebook' &#124; 'talk' &#124; 'poster'}* 중 하나를 선택하여 입력할 수 있다.
 - ***style*** 에는 문자열 또는 딕셔너리 자료형을 입력하며 배경을 설정할 수 있다. *{'darkgrid' &#124; 'whitegrid' &#124; 'dark' &#124; 'white' &#124; 'ticks'}* 중 하나를 선택하여 입력할 수 있다.
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://seaborn.pydata.org/generated/seaborn.set.html
     
 **[주의]**  
-**set()** 메소드로 플롯 스타일을 변경하면 폰트 설정 또한 초기화 되기 때문에 한글 폰트를 사용하려면 다시 설정해줘야한다.
+**set** 메소드로 플롯 스타일을 변경하면 폰트 설정 또한 초기화 되기 때문에 한글 폰트를 사용하려면 다시 설정해줘야한다.
 
 [seaborn.set](https://seaborn.pydata.org/generated/seaborn.set.html)
 - Set aesthetic parameters in one step.
