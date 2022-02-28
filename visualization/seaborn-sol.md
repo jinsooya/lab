@@ -13,7 +13,7 @@ Seoul National University
 
 - - -
 
-<div align='right'><font size='-1'>[partial credit: 김도훈]</font></div>
+<div align='right'><font size='-1'>[credit: 김도훈]</font></div>
 
 <h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#seaborn" data-toc-modified-id="seaborn-1">seaborn</a></span></li><li><span><a href="#seaborn-설치-및-불러오기" data-toc-modified-id="seaborn-설치-및-불러오기-2">seaborn 설치 및 불러오기</a></span></li><li><span><a href="#전처리" data-toc-modified-id="전처리-3">전처리</a></span><ul class="toc-item"><li><span><a href="#샘플-데이터-불러오기" data-toc-modified-id="샘플-데이터-불러오기-3.1">샘플 데이터 불러오기</a></span></li><li><span><a href="#불러온-데이터-열람하기" data-toc-modified-id="불러온-데이터-열람하기-3.2">불러온 데이터 열람하기</a></span></li></ul></li><li><span><a href="#막대-그래프" data-toc-modified-id="막대-그래프-4">막대 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-막대-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-막대-그래프-그리기-4.1">Lab: 타이타닉 데이터로 막대 그래프 그리기</a></span></li></ul></li><li><span><a href="#카운트-플롯" data-toc-modified-id="카운트-플롯-5">카운트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기(simple-version)-5.1">Lab: 타이타닉 데이터로 카운트 플롯 그리기(simple version)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-카운트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-카운트-플롯-그리기-5.2">Lab: 타이타닉 데이터로 카운트 플롯 그리기</a></span></li></ul></li><li><span><a href="#러그-플롯" data-toc-modified-id="러그-플롯-6">러그 플롯</a></span></li><li><span><a href="#커널-밀도-플롯" data-toc-modified-id="커널-밀도-플롯-7">커널 밀도 플롯</a></span></li><li><span><a href="#히스토그램" data-toc-modified-id="히스토그램-8">히스토그램</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-러그-플롯,-커널-밀도-플롯,-히스토그램-그리기-8.1">Lab: 타이타닉 데이터로 러그 플롯, 커널 밀도 플롯, 히스토그램 그리기</a></span></li></ul></li><li><span><a href="#박스-그래프" data-toc-modified-id="박스-그래프-9">박스 그래프</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-박스-그래프-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-박스-그래프-그리기-9.1">Lab: 타이타닉 데이터로 박스 그래프 그리기</a></span></li></ul></li><li><span><a href="#바이올린-플롯" data-toc-modified-id="바이올린-플롯-10">바이올린 플롯</a></span></li><li><span><a href="#스트립-플롯" data-toc-modified-id="스트립-플롯-11">스트립 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-스트립-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-스트립-플롯-그리기-11.1">Lab: 타이타닉 데이터로 스트립 플롯 그리기</a></span></li></ul></li><li><span><a href="#스웜-플롯" data-toc-modified-id="스웜-플롯-12">스웜 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-바이올린-플롯과-스웜-플롯-겹쳐-그리기-12.1">Lab: 타이타닉 데이터로 바이올린 플롯과 스웜 플롯 겹쳐 그리기</a></span></li></ul></li><li><span><a href="#산점도" data-toc-modified-id="산점도-13">산점도</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-산점도-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-산점도-그리기-13.1">Lab: 타이타닉 데이터로 산점도 그리기</a></span></li></ul></li><li><span><a href="#히트맵" data-toc-modified-id="히트맵-14">히트맵</a></span><ul class="toc-item"><li><span><a href="#피벗-테이블" data-toc-modified-id="피벗-테이블-14.1">피벗 테이블</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-히트맵-만들기" data-toc-modified-id="Lab:-타이타닉-데이터로-히트맵-만들기-14.2">Lab: 타이타닉 데이터로 히트맵 만들기</a></span></li></ul></li><li><span><a href="#조인트-플롯" data-toc-modified-id="조인트-플롯-15">조인트 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-조인트-플롯-그리기" data-toc-modified-id="Lab:-타이타닉-데이터로-조인트-플롯-그리기-15.1">Lab: 타이타닉 데이터로 조인트 플롯 그리기</a></span></li></ul></li><li><span><a href="#캣-플롯" data-toc-modified-id="캣-플롯-16">캣 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기(가로-모양의-바이올린)-16.1">Lab: 타이타닉 데이터로 캣 플롯 그리기(가로 모양의 바이올린)</a></span></li><li><span><a href="#Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)" data-toc-modified-id="Lab:-타이타닉-데이터로-캣-플롯-그리기-(세로-모양의-바이올린)-16.2">Lab: 타이타닉 데이터로 캣 플롯 그리기(세로 모양의 바이올린)</a></span></li></ul></li><li><span><a href="#페어-플롯" data-toc-modified-id="페어-플롯-17">페어 플롯</a></span><ul class="toc-item"><li><span><a href="#Lab:-다이아몬드-데이터로-페어-플롯-그리기" data-toc-modified-id="Lab:-다이아몬드-데이터로-페어-플롯-그리기-17.1">Lab: 다이아몬드 데이터로 페어 플롯 그리기</a></span><ul class="toc-item"><li><span><a href="#다이아몬드-데이터-불러오기" data-toc-modified-id="다이아몬드-데이터-불러오기-17.1.1">다이아몬드 데이터 불러오기</a></span></li><li><span><a href="#다이아몬드-데이터에-대한-설명" data-toc-modified-id="다이아몬드-데이터에-대한-설명-17.1.2">다이아몬드 데이터에 대한 설명</a></span></li></ul></li></ul></li><li><span><a href="#조인트-플롯-vs.-캣-플롯-vs.--페어-플롯" data-toc-modified-id="조인트-플롯-vs.-캣-플롯-vs.--페어-플롯-18">조인트 플롯 vs. 캣 플롯 vs.  페어 플롯</a></span></li><li><span><a href="#스타일" data-toc-modified-id="스타일-19">스타일</a></span></li></ul></div>
@@ -400,7 +400,7 @@ pyplot.show();
 ```
 
 
-![01](../../sol/visualization/img/seaborn01.png)
+![01](img/seaborn01.png)
 
 
 다음 예는 연비 데이터에서 생산 국가별 자동차의 마력 합계를 막대 그래프로 작성한 코드다
@@ -431,7 +431,7 @@ pyplot.show();
 ```
 
 
-![02](../../sol/visualization/img/seaborn02.png)
+![02](img/seaborn02.png)
 
 
 다음 예는 연비 데이터에서 생산 국가별 자동차의 평균 마력을 막대로 작성하되 각 막대를 실린더의 개수로 나누어 그리도록 하는 코드다.
@@ -474,7 +474,7 @@ pyplot.show();
 ```
 
 
-![03](../../sol/visualization/img/seaborn03.png)
+![03](img/seaborn03.png)
 
 
 ## Lab: 타이타닉 데이터로 막대 그래프 그리기
@@ -555,7 +555,7 @@ pyplot.show();
 ```
 
 
-![04](../../sol/visualization/img/seaborn04.png)
+![04](img/seaborn04.png)
 
 
 ## Lab: 타이타닉 데이터로 카운트 플롯 그리기(simple version)
@@ -679,7 +679,7 @@ pyplot.show();
 ```
 
 
-![05](../../sol/visualization/img/seaborn05.png)
+![05](img/seaborn05.png)
 
 
 다음 예는 막대의 길이를 **0.5**로 설정한 코드다. 막대의 최댓값은 **1**이다.
@@ -714,7 +714,7 @@ pyplot.show();
 ```
 
 
-![06](../../sol/visualization/img/seaborn06.png)
+![06](img/seaborn06.png)
 
 
 # 커널 밀도 플롯
@@ -786,7 +786,7 @@ pyplot.show();
 ```
 
 
-![07](../../sol/visualization/img/seaborn07.png)
+![07](img/seaborn07.png)
 
 
 # 히스토그램
@@ -833,7 +833,7 @@ pyplot.show();
 ```
 
 
-![08](../../sol/visualization/img/seaborn08.png)
+![08](img/seaborn08.png)
 
 
 다음 예는 연비 데이터의 자동차 배기량 값을 히스토그램, 커널 밀도 플롯, 러그 플롯으로 동시에 보여주는 코드다.
@@ -858,7 +858,7 @@ pyplot.show();
 ```
 
 
-![09](../../sol/visualization/img/seaborn09.png)
+![09](img/seaborn09.png)
 
 
 ## Lab: 타이타닉 데이터로 러그 플롯, 커널 밀도 플롯, 히스토그램 그리기
@@ -964,7 +964,7 @@ pyplot.show();
 ```
 
 
-![10](../../sol/visualization/img/seaborn10.png)
+![10](img/seaborn10.png)
 
 
 다음 예는 팁 데이터에서 고객의 흡연 여부에 따라 구분한 요일별 청구서 금액을 박스 그래프로 작성한 코드다.
@@ -1002,7 +1002,7 @@ pyplot.show();
 ```
 
 
-![11](../../sol/visualization/img/seaborn11.png)
+![11](img/seaborn11.png)
 
 
 ## Lab: 타이타닉 데이터로 박스 그래프 그리기
@@ -1091,7 +1091,7 @@ pyplot.show();
 ```
 
 
-![12](../../sol/visualization/img/seaborn12.png)
+![12](img/seaborn12.png)
 
 
 다음 예는 연비 데이터에서 생산 국가별 자동차 마력을 실린더의 개수에 따라 나누어 바이올린 플롯으로 작성한 코드다.
@@ -1138,7 +1138,7 @@ pyplot.show();
 ```
 
 
-![13](../../sol/visualization/img/seaborn13.png)
+![13](img/seaborn13.png)
 
 
 다음 예는 팁 데이터에서 성별에 따른 청구서 금액을 점심과 저녁으로 구분하여 바이올린 플롯으로 작성한 코드다. 이렇게 하려면 매개변수 ***split*** 를 **True**로 설정하고 작성하면 되는데 이 때 ***hue*** 에 설정한 열의 값이 두 개의 범주를 가지는 범주형이어야 한다.
@@ -1179,7 +1179,7 @@ pyplot.show();
 ```
 
 
-![14](../../sol/visualization/img/seaborn14.png)
+![14](img/seaborn14.png)
 
 
 # 스트립 플롯
@@ -1241,7 +1241,7 @@ pyplot.show();
 ```
 
 
-![15](../../sol/visualization/img/seaborn15.png)
+![15](img/seaborn15.png)
 
 
 다음 예는 연비 데이터에서 생산 국가별 자동차 마력을 실린더의 개수에 따라 나누어 스트립 플롯으로 작성한 코드다.
@@ -1286,7 +1286,7 @@ pyplot.show();
 ```
 
 
-![16](../../sol/visualization/img/seaborn16.png)
+![16](img/seaborn16.png)
 
 
 다음 예는 연비 데이터에서 생산 국가별 자동차 마력을 박스 그래프와 스트립 플롯으로 겹쳐 작성한 코드다.
@@ -1320,7 +1320,7 @@ pyplot.show();
 ```
 
 
-![17](../../sol/visualization/img/seaborn17.png)
+![17](img/seaborn17.png)
 
 
 ## Lab: 타이타닉 데이터로 스트립 플롯 그리기
@@ -1401,7 +1401,7 @@ pyplot.show();
 ```
 
 
-![18](../../sol/visualization/img/seaborn18.png)
+![18](img/seaborn18.png)
 
 
 다음 예는 팁 데이터에서 요일 별 청구서 금액을 스웜 플롯으로 작성한 코드다.
@@ -1429,7 +1429,7 @@ pyplot.show();
 ```
 
 
-![19](../../sol/visualization/img/seaborn19.png)
+![19](img/seaborn19.png)
 
 
 다음 예는 팁 데이터에서 요일 별 산점도를 흡연 여부에 따라 나눈 청구서 금액을 스웜 플롯으로 작성한 코드다.
@@ -1469,7 +1469,7 @@ pyplot.show();
 ```
 
 
-![20](../../sol/visualization/img/seaborn20.png)
+![20](img/seaborn20.png)
 
 
 다음 예는 팁 데이터에서 요일별 청구서 금액을 바이올린 플롯과 스웜 플롯으로 겹쳐 작성한 코드다.
@@ -1502,7 +1502,7 @@ pyplot.show();
 ```
 
 
-![21](../../sol/visualization/img/seaborn21.png)
+![21](img/seaborn21.png)
 
 
 ## Lab: 타이타닉 데이터로 바이올린 플롯과 스웜 플롯 겹쳐 그리기
@@ -1568,7 +1568,7 @@ pyplot.show();
 ```
 
 
-![22](../../sol/visualization/img/seaborn22.png)
+![22](img/seaborn22.png)
 
 
 ## Lab: 타이타닉 데이터로 산점도 그리기
@@ -1694,7 +1694,7 @@ pyplot.show();
 ```
 
 
-![23](../../sol/visualization/img/seaborn23.png)
+![23](img/seaborn23.png)
 
 
 다음 예는 앞서 작성한 히트맵의 ***cmap*** 설정을 통해 색상을 다르게 표현한 코드다.
@@ -1713,7 +1713,7 @@ pyplot.show();
 ```
 
 
-![24](../../sol/visualization/img/seaborn24.png)
+![24](img/seaborn24.png)
 
 
 다음 예는 앞서 작성한 피벗 테이블로 히트맵을 그리되 다양한 전달인자로 도표의 모양을 조금 다르게 표현한 코드다.
@@ -1742,7 +1742,7 @@ pyplot.show();
 ```
 
 
-![25](../../sol/visualization/img/seaborn25.png)
+![25](img/seaborn25.png)
 
 
 ## 피벗 테이블
@@ -1903,7 +1903,7 @@ pyplot.show();
 ```
 
 
-![26](../../sol/visualization/img/seaborn26.png)
+![26](img/seaborn26.png)
 
 
 다음 예는 붓꽃 데이터의 꽃받침 길이와 꽃잎 길이로 도표를 작성하되 내부 도표로 산점도 대신 커널 밀도 플롯을 보여주는 조인트 플롯을 작성한 코드다.
@@ -1939,7 +1939,7 @@ pyplot.show();
 ```
 
 
-![27](../../sol/visualization/img/seaborn27.png)
+![27](img/seaborn27.png)
 
 
 **jointplot**이 반환하는 객체인 **Jointrid**의 **plot_joint** 메소드로 세 개의 그래프도 그릴 수 있다. 아래 코드는 안에 산점도와 가장자리에 히스토그램을 그린 후 안에 커널 밀도 플롯을 추가한 코드다.
@@ -1970,7 +1970,7 @@ pyplot.show();
 ```
 
 
-![28](../../sol/visualization/img/seaborn28.png)
+![28](img/seaborn28.png)
 
 
 ## Lab: 타이타닉 데이터로 조인트 플롯 그리기
@@ -2070,7 +2070,7 @@ pyplot.show();
 ```
 
 
-![29](../../sol/visualization/img/seaborn29.png)
+![29](img/seaborn29.png)
 
 
 다음 예는 팁 데이터에서 요일 별로 흡연 여부에 따라 성별로 구분하여 청구서 금액과의 관계를 캣 플롯을 사용하여 바이올린 플롯으로 작성한 코드다.
@@ -2125,7 +2125,7 @@ pyplot.show();
 ```
 
 
-![30](../../sol/visualization/img/seaborn30.png)
+![30](img/seaborn30.png)
 
 
 다음 예는 팁 데이터에서 요일 별로 흡연 여부에 따라 성별로 구분하여 청구서 금액과의 관계를 캣 플롯을 사용하여 바이올린 플롯으로 작성한 코드다. 앞의 예와 다르게 이번에는 매개변수 ***split*** 를 **True**로 설정한다.
@@ -2176,7 +2176,7 @@ pyplot.show();
 ```
 
 
-![31](../../sol/visualization/img/seaborn31.png)
+![31](img/seaborn31.png)
 
 
 ## Lab: 타이타닉 데이터로 캣 플롯 그리기(가로 모양의 바이올린)
@@ -2279,7 +2279,7 @@ pyplot.show();
 ```
 
 
-![32](../../sol/visualization/img/seaborn32.png)
+![32](img/seaborn32.png)
 
 
 다음 예는 **pairplot**의 매개변수 ***hue*** 를 사용하여 붓꽃 데이터에서 붓꽃의 종류별로 색을 다르게 표현하는 페어 플롯을 작성한 코드다.
@@ -2319,7 +2319,7 @@ pyplot.show();
 ```
 
 
-![33](../../sol/visualization/img/seaborn33.png)
+![33](img/seaborn33.png)
 
 
 ## Lab: 다이아몬드 데이터로 페어 플롯 그리기
@@ -2438,7 +2438,7 @@ sinplot()
 ```
 
 
-![34](../../sol/visualization/img/seaborn34.png)
+![34](img/seaborn34.png)
 
 
 다음 예는 'paper'라는 context로 사인 함수를 그리는 코드다.
@@ -2451,7 +2451,7 @@ sinplot()
 ```
 
 
-![35](../../sol/visualization/img/seaborn35.png)
+![35](img/seaborn35.png)
 
 
 다음 예는 'talk'라는 context로 사인 함수를 그리는 코드다.
@@ -2464,7 +2464,7 @@ sinplot()
 ```
 
 
-![36](../../sol/visualization/img/seaborn36.png)
+![36](img/seaborn36.png)
 
 
 이번에는 'poster'라는 context로 사인 함수를 그리는 코드다.
@@ -2477,7 +2477,7 @@ sinplot()
 ```
 
 
-![37](../../sol/visualization/img/seaborn37.png)
+![37](img/seaborn37.png)
 
 
 다음 예는 어두운 그리드 배경에 사인 함수를 그리는 코드다.
@@ -2490,7 +2490,7 @@ sinplot()
 ```
 
 
-![38](../../sol/visualization/img/seaborn38.png)
+![38](img/seaborn38.png)
 
 
 이번에는 어두운 배경에 사인 함수를 그리는 코드다.
@@ -2503,7 +2503,7 @@ sinplot()
 ```
 
 
-![39](../../sol/visualization/img/seaborn39.png)
+![39](img/seaborn39.png)
 
 
 다음은 하얀 그리드 배경에 사인 함수를 그리는 코드다.
@@ -2516,7 +2516,7 @@ sinplot()
 ```
 
 
-![40](../../sol/visualization/img/seaborn40.png)
+![40](img/seaborn40.png)
 
 
 이번에는 하얀 배경에 사인 함수를 그리는 코드다.
@@ -2529,7 +2529,7 @@ sinplot()
 ```
 
 
-![41](../../sol/visualization/img/seaborn41.png)
+![41](img/seaborn41.png)
 
 
 
@@ -2543,7 +2543,7 @@ sinplot()
 ```
 
 
-![42](../../sol/visualization/img/seaborn42.png)
+![42](img/seaborn42.png)
 
 
 - - -
