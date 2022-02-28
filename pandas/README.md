@@ -1,8 +1,8 @@
 # 판다스(Pandas)
 
-## [Series](01.series.md)
+## [Series 실습](01.series.md)
 
-## [DataFrame](02.dataframe.md)
+## [DataFrame 실습 문제](02.dataframe.md) / [DataFrame 실습](02.dataframe-sol.md)
 
 ## [Importing & Exporting Data](03.importing-exporting-data.md)
 
