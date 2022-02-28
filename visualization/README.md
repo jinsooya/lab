@@ -4,7 +4,7 @@
 
 ## [Matplotlib 기초 실습 문제](matplotlib.md) / [Matplotlib 기초 실습](matplotlib-sol.md)
 
-## [seaborn 기초 실습 문제](seaborn.md)
+## [seaborn 기초 실습 문제](seaborn.md) / [seaborn 기초 실습](seaborn-sol.md)
 
 ## [NetworkX 기초 실습 문제](networkx.md)
 
