@@ -8,7 +8,7 @@
 
 ## [View 실습 문제](04.view.md) / [View 실습](04.view-sol.md)
 
-## [Indexing](05.indexing.md)
+## [Indexing 실습 문제](05.indexing.md) / [Indexing 실습](05.indexing-sol.md)
 
 ## [Update](06.update.md)
 
