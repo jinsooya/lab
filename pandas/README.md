@@ -6,7 +6,7 @@
 
 ## [Importing & Exporting Data 실습 문제](03.importing-exporting-data.md) / [Importing & Exporting Data 실습](03.importing-exporting-data-sol.md)
 
-## [View](04.view.md)
+## [View 실습 문제](04.view.md) / [View 실습](04.view-sol.md)
 
 ## [Indexing](05.indexing.md)
 
