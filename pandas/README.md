@@ -4,7 +4,7 @@
 
 ## [DataFrame 실습 문제](02.dataframe.md) / [DataFrame 실습](02.dataframe-sol.md)
 
-## [Importing & Exporting Data](03.importing-exporting-data.md)
+## [Importing & Exporting Data 실습 문제](03.importing-exporting-data.md) / [Importing & Exporting Data 실습](03.importing-exporting-data-sol.md)
 
 ## [View](04.view.md)
 
