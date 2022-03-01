@@ -10,7 +10,7 @@
 
 ## [Indexing 실습 문제](05.indexing.md) / [Indexing 실습](05.indexing-sol.md)
 
-## [Update](06.update.md)
+## [Update 실습 문제](06.update.md) / [Update 실습](06.update-sol.md) 
 
 ## [Combining](07.combining-dataframe.md)
 
