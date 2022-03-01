@@ -12,7 +12,7 @@
 
 ## [Update 실습 문제](06.update.md) / [Update 실습](06.update-sol.md) 
 
-## [Combining](07.combining-dataframe.md)
+## [Combining 실습 문제](07.combining-dataframe.md) / [Combining 실습 문제](07.combining-dataframe-sol.md) 
 
 
 ### More coming...
