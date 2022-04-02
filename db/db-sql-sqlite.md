@@ -15,7 +15,7 @@ Seoul National University
 <div align='right'><font size='-1'>[partial credit: 이일주 연구원]</font></div>
 
 <h3>Table of Contents<span class="tocSkip"></span></h3>
-<div class="toc"><ul class="toc-item"><li><span><a href="#데이터베이스-기본-개념" data-toc-modified-id="데이터베이스-기본-개념-1">데이터베이스 기본 개념</a></span><ul class="toc-item"><li><span><a href="#데이터베이스-관리-시스템" data-toc-modified-id="데이터베이스-관리-시스템-1.1">데이터베이스 관리 시스템</a></span></li><li><span><a href="#데이터베이스" data-toc-modified-id="데이터베이스-1.2">데이터베이스</a></span></li><li><span><a href="#관계형-데이터베이스" data-toc-modified-id="관계형-데이터베이스-1.3">관계형 데이터베이스</a></span><ul class="toc-item"><li><span><a href="#관계형-데이터베이스-구조" data-toc-modified-id="관계형-데이터베이스-구조-1.3.1">관계형 데이터베이스 구조</a></span></li><li><span><a href="#테이블" data-toc-modified-id="테이블-1.3.2">테이블</a></span></li><li><span><a href="#정규화" data-toc-modified-id="정규화-1.3.3">정규화</a></span></li><li><span><a href="#제약-조건" data-toc-modified-id="제약-조건-1.3.4">제약 조건</a></span></li></ul></li><li><span><a href="#데이터베이스-언어" data-toc-modified-id="데이터베이스-언어-1.4">데이터베이스 언어</a></span></li></ul></li><li><span><a href="#SQLite" data-toc-modified-id="SQLite-2">SQLite</a></span><ul class="toc-item"><li><span><a href="#SQLite의-특징" data-toc-modified-id="SQLite의-특징-2.1">SQLite의 특징</a></span></li><li><span><a href="#내려받기" data-toc-modified-id="내려받기-2.2">내려받기</a></span><ul class="toc-item"><li><span><a href="#윈도우-운영체제" data-toc-modified-id="윈도우-운영체제-2.2.1">윈도우 운영체제</a></span></li><li><span><a href="#맥-운영체제(macOS)" data-toc-modified-id="맥-운영체제(macOS)-2.2.2">맥 운영체제(macOS)</a></span></li></ul></li><li><span><a href="#설치하기" data-toc-modified-id="설치하기-2.3">설치하기</a></span></li></ul></li><li><span><a href="#Structured-Query-Language" data-toc-modified-id="Structured-Query-Language-3">Structured Query Language</a></span><ul class="toc-item"><li><span><a href="#데이터베이스-생성" data-toc-modified-id="데이터베이스-생성-3.1">데이터베이스 생성</a></span></li><li><span><a href="#CREATE-TABLE" data-toc-modified-id="CREATE-TABLE-3.2">CREATE TABLE</a></span><ul class="toc-item"><li><span><a href="#Keys" data-toc-modified-id="Keys-3.2.1">Keys</a></span><ul class="toc-item"><li><span><a href="#PRIMARY-KEY" data-toc-modified-id="PRIMARY-KEY-3.2.1.1">PRIMARY KEY</a></span></li><li><span><a href="#AUTOINCREMENT" data-toc-modified-id="AUTOINCREMENT-3.2.1.2">AUTOINCREMENT</a></span></li><li><span><a href="#FOREIGN-KEY" data-toc-modified-id="FOREIGN-KEY-3.2.1.3">FOREIGN KEY</a></span></li></ul></li></ul></li><li><span><a href="#DROP-TABLE" data-toc-modified-id="DROP-TABLE-3.3">DROP TABLE</a></span></li><li><span><a href="#INSERT" data-toc-modified-id="INSERT-3.4">INSERT</a></span></li><li><span><a href="#UPDATE" data-toc-modified-id="UPDATE-3.5">UPDATE</a></span></li><li><span><a href="#DELETE" data-toc-modified-id="DELETE-3.6">DELETE</a></span></li><li><span><a href="#SELECT" data-toc-modified-id="SELECT-3.7">SELECT</a></span><ul class="toc-item"><li><span><a href="#WHERE-절-조건식" data-toc-modified-id="WHERE-절-조건식-3.7.1">WHERE 절 조건식</a></span></li></ul></li><li><span><a href="#Lab:-초급-SQL" data-toc-modified-id="Lab:-초급-SQL-3.8">Lab: 초급 SQL</a></span><ul class="toc-item"><li><span><a href="#문제-1" data-toc-modified-id="문제-1-3.8.1">문제 1</a></span></li><li><span><a href="#문제-2" data-toc-modified-id="문제-2-3.8.2">문제 2</a></span></li><li><span><a href="#문제-3" data-toc-modified-id="문제-3-3.8.3">문제 3</a></span></li></ul></li><li><span><a href="#GROUP-BY" data-toc-modified-id="GROUP-BY-3.9">GROUP BY</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.9.1">문제</a></span></li><li><span><a href="#HAVING" data-toc-modified-id="HAVING-3.9.2">HAVING</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.9.2.1">문제</a></span></li></ul></li></ul></li><li><span><a href="#ORDER-BY" data-toc-modified-id="ORDER-BY-3.10">ORDER BY</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.10.1">문제</a></span></li></ul></li><li><span><a href="#JOIN" data-toc-modified-id="JOIN-3.11">JOIN</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.11.1">문제</a></span></li></ul></li><li><span><a href="#중첩-질의" data-toc-modified-id="중첩-질의-3.12">중첩 질의</a></span></li><li><span><a href="#Lab:-중급-SQL" data-toc-modified-id="Lab:-중급-SQL-3.13">Lab: 중급 SQL</a></span><ul class="toc-item"><li><span><a href="#문제-1" data-toc-modified-id="문제-1-3.13.1">문제 1</a></span></li><li><span><a href="#문제-2" data-toc-modified-id="문제-2-3.13.2">문제 2</a></span></li><li><span><a href="#문제-3" data-toc-modified-id="문제-3-3.13.3">문제 3</a></span></li></ul></li></ul></li><li><span><a href="#학습에-도움이-될만한-참고-사이트" data-toc-modified-id="학습에-도움이-될만한-참고-사이트-4">학습에 도움이 될만한 참고 사이트</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#데이터베이스-기본-개념" data-toc-modified-id="데이터베이스-기본-개념-1">데이터베이스 기본 개념</a></span><ul class="toc-item"><li><span><a href="#데이터베이스-관리-시스템" data-toc-modified-id="데이터베이스-관리-시스템-1.1">데이터베이스 관리 시스템</a></span></li><li><span><a href="#데이터베이스" data-toc-modified-id="데이터베이스-1.2">데이터베이스</a></span></li><li><span><a href="#관계형-데이터베이스" data-toc-modified-id="관계형-데이터베이스-1.3">관계형 데이터베이스</a></span><ul class="toc-item"><li><span><a href="#관계형-데이터베이스-구조" data-toc-modified-id="관계형-데이터베이스-구조-1.3.1">관계형 데이터베이스 구조</a></span></li><li><span><a href="#테이블" data-toc-modified-id="테이블-1.3.2">테이블</a></span></li><li><span><a href="#정규화" data-toc-modified-id="정규화-1.3.3">정규화</a></span></li><li><span><a href="#제약-조건" data-toc-modified-id="제약-조건-1.3.4">제약 조건</a></span></li></ul></li><li><span><a href="#데이터베이스-언어" data-toc-modified-id="데이터베이스-언어-1.4">데이터베이스 언어</a></span></li></ul></li><li><span><a href="#SQLite" data-toc-modified-id="SQLite-2">SQLite</a></span><ul class="toc-item"><li><span><a href="#SQLite의-특징" data-toc-modified-id="SQLite의-특징-2.1">SQLite의 특징</a></span></li><li><span><a href="#내려받기" data-toc-modified-id="내려받기-2.2">내려받기</a></span><ul class="toc-item"><li><span><a href="#윈도우-운영체제" data-toc-modified-id="윈도우-운영체제-2.2.1">윈도우 운영체제</a></span></li><li><span><a href="#맥-운영체제(macOS)" data-toc-modified-id="맥-운영체제(macOS)-2.2.2">맥 운영체제(macOS)</a></span></li></ul></li><li><span><a href="#설치하기" data-toc-modified-id="설치하기-2.3">설치하기</a></span></li></ul></li><li><span><a href="#Structured-Query-Language" data-toc-modified-id="Structured-Query-Language-3">Structured Query Language</a></span><ul class="toc-item"><li><span><a href="#데이터베이스-생성" data-toc-modified-id="데이터베이스-생성-3.1">데이터베이스 생성</a></span></li><li><span><a href="#CREATE-TABLE" data-toc-modified-id="CREATE-TABLE-3.2">CREATE TABLE</a></span><ul class="toc-item"><li><span><a href="#Keys" data-toc-modified-id="Keys-3.2.1">Keys</a></span><ul class="toc-item"><li><span><a href="#PRIMARY-KEY" data-toc-modified-id="PRIMARY-KEY-3.2.1.1">PRIMARY KEY</a></span></li><li><span><a href="#AUTOINCREMENT" data-toc-modified-id="AUTOINCREMENT-3.2.1.2">AUTOINCREMENT</a></span></li><li><span><a href="#FOREIGN-KEY" data-toc-modified-id="FOREIGN-KEY-3.2.1.3">FOREIGN KEY</a></span></li></ul></li></ul></li><li><span><a href="#DROP-TABLE" data-toc-modified-id="DROP-TABLE-3.3">DROP TABLE</a></span></li><li><span><a href="#INSERT" data-toc-modified-id="INSERT-3.4">INSERT</a></span></li><li><span><a href="#UPDATE" data-toc-modified-id="UPDATE-3.5">UPDATE</a></span></li><li><span><a href="#DELETE" data-toc-modified-id="DELETE-3.6">DELETE</a></span></li><li><span><a href="#SELECT" data-toc-modified-id="SELECT-3.7">SELECT</a></span><ul class="toc-item"><li><span><a href="#WHERE-절-조건식" data-toc-modified-id="WHERE-절-조건식-3.7.1">WHERE 절 조건식</a></span></li></ul></li><li><span><a href="#Lab:-초급-SQL" data-toc-modified-id="Lab:-초급-SQL-3.8">Lab: 초급 SQL</a></span><ul class="toc-item"><li><span><a href="#문제-1" data-toc-modified-id="문제-1-3.8.1">문제 1</a></span></li><li><span><a href="#문제-2" data-toc-modified-id="문제-2-3.8.2">문제 2</a></span></li><li><span><a href="#문제-3" data-toc-modified-id="문제-3-3.8.3">문제 3</a></span></li></ul></li><li><span><a href="#GROUP-BY" data-toc-modified-id="GROUP-BY-3.9">GROUP BY</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.9.1">문제</a></span></li><li><span><a href="#HAVING" data-toc-modified-id="HAVING-3.9.2">HAVING</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.9.2.1">문제</a></span></li></ul></li></ul></li><li><span><a href="#ORDER-BY" data-toc-modified-id="ORDER-BY-3.10">ORDER BY</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.10.1">문제</a></span></li></ul></li><li><span><a href="#JOIN" data-toc-modified-id="JOIN-3.11">JOIN</a></span><ul class="toc-item"><li><span><a href="#문제" data-toc-modified-id="문제-3.11.1">문제</a></span></li></ul></li><li><span><a href="#중첩-질의" data-toc-modified-id="중첩-질의-3.12">중첩 질의</a></span></li><li><span><a href="#Lab:-중급-SQL" data-toc-modified-id="Lab:-중급-SQL-3.13">Lab: 중급 SQL</a></span><ul class="toc-item"><li><span><a href="#문제-1" data-toc-modified-id="문제-1-3.13.1">문제 1</a></span></li><li><span><a href="#문제-2" data-toc-modified-id="문제-2-3.13.2">문제 2</a></span></li><li><span><a href="#문제-3" data-toc-modified-id="문제-3-3.13.3">문제 3</a></span></li></ul></li></ul></li></ul></div>
 
 # 데이터베이스 기본 개념
 
@@ -238,8 +238,8 @@ SQLite3이 지원하는 자료형은 다음과 같다.
 ### 윈도우 운영체제
 
 **Precompiled Binaries for Windows**로 가서 다음 두 파일을 내려받는다.
-- sqlite-**dll-win32**-x86-xxxxxxx.zip (32-bit DLL (x86) for SQLite version x.xx.x.)
-- sqlite-**tools-win32**-x86-xxxxxxx.zip (A bundle of command-line tools for managing SQLite database files, including the command-line shell program, the sqldiff.exe program, and the sqlite3_analyzer.exe program.)
+- sqlite-**dll-win32**-x86-xxxxxxx.zip (32-bit DLL (x86) for SQLite version x.xx.x.)  또는 sqlite-**dll-win642**-x64-xxxxxxx.zip (64-bit DLL (x64) for SQLite version x.xx.x.)
+- sqlite-**tools-win32**-x86-xxxxxxx.zip (A bundle of command-line tools for managing SQLite database files, including the command-line shell program, the sqldiff.exe program, and the sqlite3_analyzer.exe program.)  (윈도우 비트(32/64)에 상관 없이 작동)
 
 ### 맥 운영체제(macOS)
 - sqlite-**tools-osx**-x86-xxxxxxx.zip (Precompiled Binaries for Mac OS X (x86))
@@ -688,7 +688,7 @@ eid         fname       lname       did         gender      salary
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -711,7 +711,7 @@ sqlite> -- Your answer here
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -733,7 +733,7 @@ sqlite> -- Your answer here
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -779,7 +779,7 @@ Employee 테이블에서 각 did 그룹의 최고 salary는?
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -821,7 +821,7 @@ did         COUNT(*)
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -877,7 +877,7 @@ Employee 테이블에서 gender가 'M'인 레코드들의 fname, lname, salary�
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -941,7 +941,7 @@ James       Wong        Finance     M
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -998,7 +998,7 @@ Tim         Allen       M
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -1016,7 +1016,7 @@ sqlite> -- Your answer here
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
 
@@ -1036,14 +1036,9 @@ sqlite> -- Your answer here
 
 
 ```sqlite
-sqlite> -- Your answer here
+sqlite> -- YOUR CODE HERE
    ...>
 ```   
-
-# 학습에 도움이 될만한 참고 사이트
-
-- [SQLite로 가볍게 배우는 데이터베이스](https://wikidocs.net/book/1530)
-  
 
 - - -
 
