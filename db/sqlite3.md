@@ -15,7 +15,7 @@ Seoul National University
 <div align='right'><font size='-1'>[partial credit: 이일주 연구원]</font></div>
 
 <h3>Table of Contents<span class="tocSkip"></span></h3>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Python-DB-API-2.0" data-toc-modified-id="Python-DB-API-2.0-1">Python DB-API 2.0</a></span></li><li><span><a href="#sqlite3" data-toc-modified-id="sqlite3-2">sqlite3</a></span></li><li><span><a href="#sqlite3-설치-및-불러오기" data-toc-modified-id="sqlite3-설치-및-불러오기-3">sqlite3 설치 및 불러오기</a></span></li><li><span><a href="#데이터베이스-연결" data-toc-modified-id="데이터베이스-연결-4">데이터베이스 연결</a></span></li><li><span><a href="#커서-생성" data-toc-modified-id="커서-생성-5">커서 생성</a></span></li><li><span><a href="#테이블-생성" data-toc-modified-id="테이블-생성-6">테이블 생성</a></span></li><li><span><a href="#데이터-입력" data-toc-modified-id="데이터-입력-7">데이터 입력</a></span><ul class="toc-item"><li><span><a href="#execute()-메소드" data-toc-modified-id="execute()-메소드-7.1"><strong>execute()</strong> 메소드</a></span></li><li><span><a href="#executemany()-메소드" data-toc-modified-id="executemany()-메소드-7.2"><strong>executemany()</strong> 메소드</a></span></li><li><span><a href="#executescript()-메소드" data-toc-modified-id="executescript()-메소드-7.3"><strong>executescript()</strong> 메소드</a></span></li></ul></li><li><span><a href="#데이터-열람" data-toc-modified-id="데이터-열람-8">데이터 열람</a></span><ul class="toc-item"><li><span><a href="#fetchone()-메소드" data-toc-modified-id="fetchone()-메소드-8.1"><strong>fetchone()</strong> 메소드</a></span></li><li><span><a href="#fetchmany()-메소드" data-toc-modified-id="fetchmany()-메소드-8.2"><strong>fetchmany()</strong> 메소드</a></span></li><li><span><a href="#fetchall()-메소드" data-toc-modified-id="fetchall()-메소드-8.3"><strong>fetchall()</strong> 메소드</a></span></li><li><span><a href="#Cursor-클래스-속성-description" data-toc-modified-id="Cursor-클래스-속성-description-8.4"><strong>Cursor</strong> 클래스 속성 <strong>description</strong></a></span></li></ul></li><li><span><a href="#Lab:-sqlite3-활용" data-toc-modified-id="Lab:-sqlite3-활용-9">Lab: <strong>sqlite3</strong> 활용</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Python-DB-API-2.0" data-toc-modified-id="Python-DB-API-2.0-1">Python DB-API 2.0</a></span></li><li><span><a href="#sqlite3" data-toc-modified-id="sqlite3-2">sqlite3</a></span></li><li><span><a href="#sqlite3-설치-및-불러오기" data-toc-modified-id="sqlite3-설치-및-불러오기-3">sqlite3 설치 및 불러오기</a></span></li><li><span><a href="#데이터베이스-연결" data-toc-modified-id="데이터베이스-연결-4">데이터베이스 연결</a></span></li><li><span><a href="#커서-생성" data-toc-modified-id="커서-생성-5">커서 생성</a></span></li><li><span><a href="#테이블-생성" data-toc-modified-id="테이블-생성-6">테이블 생성</a></span></li><li><span><a href="#데이터-입력" data-toc-modified-id="데이터-입력-7">데이터 입력</a></span><ul class="toc-item"><li><span><a href="#execute-메소드" data-toc-modified-id="execute-메소드-7.1"><strong>execute</strong> 메소드</a></span></li><li><span><a href="#executemany-메소드" data-toc-modified-id="executemany-메소드-7.2"><strong>executemany</strong> 메소드</a></span></li><li><span><a href="#executescript-메소드" data-toc-modified-id="executescript-메소드-7.3"><strong>executescript</strong> 메소드</a></span></li></ul></li><li><span><a href="#데이터-열람" data-toc-modified-id="데이터-열람-8">데이터 열람</a></span><ul class="toc-item"><li><span><a href="#fetchone-메소드" data-toc-modified-id="fetchone-메소드-8.1"><strong>fetchone</strong> 메소드</a></span></li><li><span><a href="#fetchmany-메소드" data-toc-modified-id="fetchmany-메소드-8.2"><strong>fetchmany</strong> 메소드</a></span></li><li><span><a href="#fetchall-메소드" data-toc-modified-id="fetchall-메소드-8.3"><strong>fetchall</strong> 메소드</a></span></li><li><span><a href="#Cursor-클래스-속성-description" data-toc-modified-id="Cursor-클래스-속성-description-8.4"><strong>Cursor</strong> 클래스 속성 <strong>description</strong></a></span></li></ul></li><li><span><a href="#Lab:-sqlite3-활용" data-toc-modified-id="Lab:-sqlite3-활용-9">Lab: <strong>sqlite3</strong> 활용</a></span></li></ul></div>
 
 # Python DB-API 2.0
 
@@ -25,21 +25,21 @@ Seoul National University
 
 
 **Module Interface**
-- **connect(*parameters...*)**: 데이터베이스에 연결하여 **Connection** 객체를 반환한다.
+- **connect** 생성자 : 데이터베이스에 연결하여 **Connection** 객체를 반환한다.
 - **Exceptions**: Warning, Error 등을 정의한다.
 
 **Connection Objects**
-- **close()**: 데이터베이스와의 연결을 해제한다.
-- **commit()**: 트랜잭션을 커밋한다.
-- **rollback()**: 트랜잭션을 취소하고 롤백한다.
-- **cursor()**: 커서를 생성하여 반환한다.
+- **close** 메소드: 데이터베이스와의 연결을 해제한다.
+- **commit** 메소드: 트랜잭션을 커밋한다.
+- **rollback** 메소드: 트랜잭션을 취소하고 롤백한다.
+- **cursor** 메소드: 커서를 생성하여 반환한다.
 
 **Cursor Objects**
-- **execute(*sql,[,parameters]*)**: 쿼리를 수행한다.
-- **executemany(*sql, seq_of_param*)**: 쿼리를 수행한다.
-- **fetchone()**: 결과를 가져온다.
-- **fetchmany(*size = cursor.arraysize*)**: 결과를 가져온다.
-- **fetchall()**: 결과를 가져온다.
+- **execute** 메소드: 쿼리를 수행한다.
+- **executemany** 메소드: 쿼리를 수행한다.
+- **fetchone** 메소드: 결과를 가져온다.
+- **fetchmany** 메소드: 결과를 가져온다.
+- **fetchall** 메소드: 결과를 가져온다.
 
 # sqlite3
 
@@ -111,7 +111,7 @@ cursor
 
 # 테이블 생성
 
-SQL 문을 실행하려면 **execute()** 메소드를 실행하면 된다. *connection*을 사용하면 따로 커서를 생성할 필요가 없다. **execute()** 메소드는 잠시 후 다시 설명하기로 한다.
+SQL 문을 실행하려면 **execute** 메소드를 실행하면 된다. *connection* 을 사용하면 따로 커서를 생성할 필요가 없다. **execute** 메소드는 잠시 후 다시 설명하기로 한다.
 
 - <pre>cursor.execute(sql [, optional parameters])</pre>
 - <pre>connection.execute(sql [, optional parameters])</pre>
@@ -179,9 +179,9 @@ finally:
 
 # 데이터 입력
 
-## **execute()** 메소드
+## **execute** 메소드
 
-**execute**(*sql [, optional parameters]*) : **하나**의 SQL 문을 실행한다. *connection*을 사용하면 따로 커서를 생성할 필요가 없다.
+**execute**(*sql [, optional parameters]*) : **하나**의 SQL 문을 실행한다. *connection* 을 사용하면 따로 커서를 생성할 필요가 없다.
 - <pre>cursor.execute(sql [, optional parameters])</pre>
 - <pre>connection.execute(sql [, optional parameters])</pre>
 
@@ -203,7 +203,7 @@ conn.__TODO__
 바로 앞의 SQL 문을 실행한 후 SQLite를 열어 'company.db'의 'Department' 테이블을 조회하면 아직 데이터가 입력되지 않았음을 알 수 있다. 이는 지금까지 입력한 데이터는 아직 데이터베이스에 완전히 저장한 것이 아니라 임시로 저장한 상태인 것이다. 데이터베이스에 확실히 저장을 하려면 **Connection.commit()** 을 실행해야한다. 참고로 **Connection.rollback()** 은 **Connection.commit()** 이후의 모든 트랜잭션을 취소하고 **Connection.commit()** 했을 때의 상태로 되돌아간다.
 
 **[주의]**   
-**CREATE TABLE**의 경우는 **commit()** 을 하지 않아도 테이블이 생성되지만 테이블이 담고 있는 데이터를 추가/삭제/수정 할 때는 반드시 **commit()** 을 해야한다.
+**CREATE TABLE**의 경우는 **commit** 메소드를 실행하지 않아도 테이블이 생성되지만 테이블이 담고 있는 데이터를 추가/삭제/수정 할 때는 반드시 **commit** 를 실행해야 한다.
 
 
 ```python
@@ -329,9 +329,9 @@ finally:
 SQLite ERROR: UNIQUE constraint failed: Department.did
 </pre>
 
-## **executemany()** 메소드
-
-**executemany**(*sql, seq_of_parameters*) : *seq_of_param*에 있는 모든 매개변수 시퀀스나 매핑에 대하여 SQL문을 실행한다. *connection*을 사용하면 따로 커서를 생성할 필요가 없다.
+## **executemany** 메소드
+ 
+**executemany**(*sql, seq_of_parameters*) : *seq_of_param*에 있는 모든 매개변수 시퀀스나 매핑에 대하여 SQL문을 실행한다. *connection* 을 사용하면 따로 커서를 생성할 필요가 없다.
 - <pre>cursor.executemany(sql, seq_of_parameters)</pre>
 - <pre>connection.executemany(sql[, parameters])</pre>
 
@@ -372,9 +372,9 @@ finally:
     conn.close()  
 ```
 
-## **executescript()** 메소드
+## **executescript** 메소드
 
-**executescript**(*sql_script*) : 스크립트 형식으로 제공된 여러 SQL 문인 *sql_script*를 한 번에 실행한다. *connection*을 사용하면 따로 커서를 생성할 필요가 없다.
+**executescript**(*sql_script*) : 스크립트 형식으로 제공된 여러 SQL 문인 *sql_script*를 한 번에 실행한다. *connection* 을 사용하면 따로 커서를 생성할 필요가 없다.
 - <pre>cursor.executescript(sql_script)</pre>
 - <pre>connection.executescript(sql_script)</pre>
 
@@ -414,7 +414,7 @@ finally:
 
 # 데이터 열람
 
-## **fetchone()** 메소드
+## **fetchone** 메소드
 
 **fetchone**() : 질의 결과 세트의 다음 행(row)을 튜플 자료형으로 하나씩 반환한다. 반환할 데이터가 (더 이상) 없으면 **None**을 반환한다.
 - <pre>cursor.fetchone()</pre>
@@ -453,9 +453,9 @@ fetchone()이 번환한 객체의 자료형: <class 'tuple'>
 
 데이터 열람을 할 경우에는 입력이나 변경이 아니므로 굳이 커밋을 할 필요는 없다
 
-## **fetchmany()** 메소드
+## **fetchmany** 메소드
 
-**fetchmany**([*size=cursor.arraysize*]) : 질의 결과 세트의 다음 행(row) 세트를 ***size*** 개수만큼 튜플을 담고 있는 리스트 자료형으로 반환한다. 반환할 데이터가 (더 이상) 없으면 빈 리스트를 반환한다. ***size*** 를 설정하지 않으면 **fetchone()** 처럼 다음 행(row) 하나를 반환하는데 튜플이 아니라 튜플 하나를 담은 리스트를 반환한다.
+**fetchmany**([*size=cursor.arraysize*]) : 질의 결과 세트의 다음 행(row) 세트를 ***size*** 개수만큼 튜플을 담고 있는 리스트 자료형으로 반환한다. 반환할 데이터가 (더 이상) 없으면 빈 리스트를 반환한다. ***size*** 를 설정하지 않으면 **fetchone** 메소드처럼 다음 행(row) 하나를 반환하는데 튜플이 아니라 튜플 하나를 담은 리스트를 반환한다.
 - <pre>cursor.fetchmany([size = cursor.arraysize]))</pre>
 
 
@@ -497,7 +497,7 @@ finally:
 []
 </pre>
 
-## **fetchall()** 메소드
+## **fetchall** 메소드
 
 **cursor.fetchall()** : 
 질의 결과 세트의 (남은) 모든 행(row) 세트를 튜플을 담고 있는 리스트 자료형으로 반환한다. 사용 가능한 행이 없으면 빈 리스트를 반환한다.
@@ -592,8 +592,8 @@ __TODO__
 # Lab: **sqlite3** 활용
 
 다음 조건을 만족하는 코드를 작성한다.
-- SQL **INSERT** 문은 **executemany()** 메소드를 사용한다.
-- SQL **SELECT** 문을 실행한 결과는 **fetchall()** 을 사용하여 출력한다.
+- SQL **INSERT** 문은 **executemany** 메소드를 사용한다.
+- SQL **SELECT** 문을 실행한 결과는 **fetchall()** 메소드를 사용하여 출력한다.
 
 **STEP 1**: **CREATE** 문을 사용하여 아래 테이블 'Employee'를 생성한다.
 - eid: INTEGER
